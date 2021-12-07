@@ -8,6 +8,16 @@
     <language>es-ES</language>
     <lastBuildDate>Tue, 07 Dec 2021 18:21:45 +0100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>“Sobre mí”</title>
+      <link>/sobre-mi/</link>
+      <pubDate>Tue, 07 Dec 2021 19:41:58 +0100</pubDate>
+      
+      <guid>/sobre-mi/</guid>
+      <description>Mi nombre es Manu Mateos, tengo 29 años y actualmente resido en Extremadura. Ahora mismo soy desarrollador de aplicaciones para iOS, ahora mismo trabajando en una empresa del sector de la televisión y los contenidos audiovisuales.
+He hecho…  Un juguete en colaboración con RTVE, que puedes probar aquí.  También puedes ver mi repositorio público en GitHub.</description>
+    </item>
+    
+    <item>
       <title>Crear primer sitio Web con Hugo</title>
       <link>/posts/crear-primer-sitio-web-hugo/</link>
       <pubDate>Tue, 07 Dec 2021 18:21:45 +0100</pubDate>
