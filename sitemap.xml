@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://manumateos.dev/posts/ciclo-de-vida-de-los-uiviewcontrollers/</loc>
+    <loc>http://www.manumateos.dev/posts/ciclo-de-vida-de-los-uiviewcontrollers/</loc>
     <lastmod>2021-12-07T17:16:07+01:00</lastmod>
   </url><url>
-    <loc>https://manumateos.dev/</loc>
+    <loc>http://www.manumateos.dev/</loc>
     <lastmod>2021-12-07T17:16:07+01:00</lastmod>
   </url><url>
-    <loc>https://manumateos.dev/posts/</loc>
+    <loc>http://www.manumateos.dev/posts/</loc>
     <lastmod>2021-12-07T17:16:07+01:00</lastmod>
   </url><url>
-    <loc>https://manumateos.dev/categories/</loc>
+    <loc>http://www.manumateos.dev/categories/</loc>
   </url><url>
-    <loc>https://manumateos.dev/tags/</loc>
+    <loc>http://www.manumateos.dev/tags/</loc>
   </url>
 </urlset>
