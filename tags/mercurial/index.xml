@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mercurial on manumateos.dev</title>
+    <link>/tags/mercurial/</link>
+    <description>Recent content in Mercurial on manumateos.dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-ES</language>
+    <lastBuildDate>Tue, 07 Dec 2021 18:14:42 +0100</lastBuildDate><atom:link href="/tags/mercurial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hg strip</title>
+      <link>/posts/hg-strip/</link>
+      <pubDate>Tue, 07 Dec 2021 18:14:42 +0100</pubDate>
+      
+      <guid>/posts/hg-strip/</guid>
+      <description>hg strip es una extensión de Mercurial que permite eliminar changesets y todos sus descendientes.
+Hay que habilitarla añadiendo lo siguiente al fichero .hgrc
+[extensions] strip = A partir de ese momento, hg strip &amp;lt;revisión&amp;gt; sirve para eliminar esa revisión (en número, no en hash) y todas sus descendientes.
+La he utilizado para eliminar una rama recién commiteada y no pusheada. El proceso fue:
+ Abrir nueva rama con el nombre correcto.</description>
+    </item>
+    
+    <item>
+      <title>hg shelve</title>
+      <link>/posts/hg-shelve/</link>
+      <pubDate>Tue, 07 Dec 2021 18:14:17 +0100</pubDate>
+      
+      <guid>/posts/hg-shelve/</guid>
+      <description>hg unshelve &amp;lt;nombre&amp;gt; sirve para sacar un changeset de un shelve. Si hay cambios pendientes y se genera un conflicto, terminaremos con dos cabezas en la rama actual, lo cual es un embrollo.
+Las dos salidas posibles son:
+ Llevar a cabo el merge y continuar el unshelve (hg unshelve --continue) Abortar el unshelve (hg unshelve --abort), hacer lo que sea con los cambios pendientes, y reiniciar el unshelve.  SourceTree no tiene un comando gráfico para abortar el unshelve.</description>
+    </item>
+    
+  </channel>
+</rss>
