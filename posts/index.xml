@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on manumateos.dev</title>
+    <link>https://manumateos.dev/posts/</link>
+    <description>Recent content in Posts on manumateos.dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Tue, 07 Dec 2021 17:16:07 +0100</lastBuildDate><atom:link href="https://manumateos.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ciclo de vida de kos UIViewControllers</title>
+      <link>https://manumateos.dev/posts/ciclo-de-vida-de-los-uiviewcontrollers/</link>
+      <pubDate>Tue, 07 Dec 2021 17:16:07 +0100</pubDate>
+      
+      <guid>https://manumateos.dev/posts/ciclo-de-vida-de-los-uiviewcontrollers/</guid>
+      <description>Un descubrimiento: en principio desde iOS 13, cuando presentas un viewController encima de otro, no se llaman los métodos viewWillDissapear ni viewDidDissapear del ViewController llamante. La solución, al menos de momento, es poner el modalPresentationStyle del viewController a mostrar, de este modo:
+viewController.modalPresentationStyle = .fullScreen Split Screen Hay muchos cambios en el [[Ciclo de vida de los UIViewControllers]] en cuanto metemos en la ecuación la multitarea de iPad, particularmente la funcionalidad de #SplitScreen.</description>
+    </item>
+    
+  </channel>
+</rss>
