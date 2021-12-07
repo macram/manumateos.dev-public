@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iOS on manumateos.dev</title>
+    <link>/tags/ios/</link>
+    <description>Recent content in iOS on manumateos.dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-ES</language>
+    <lastBuildDate>Tue, 07 Dec 2021 18:04:28 +0100</lastBuildDate><atom:link href="/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Doble Punto Y Coma en Localizable</title>
+      <link>/posts/doble-punto-y-coma-en-localizable/</link>
+      <pubDate>Tue, 07 Dec 2021 18:04:28 +0100</pubDate>
+      
+      <guid>/posts/doble-punto-y-coma-en-localizable/</guid>
+      <description>Si en un fichero Localizable.strings ponemos por descuido un doble punto y coma, todas las cadenas definidas a partir de ese error no serán traducidas, y en su lugar veremos en la aplicación las claves sin traducir para esa localización concreta.</description>
+    </item>
+    
+    <item>
+      <title>Ciclo de vida de los UIViewControllers</title>
+      <link>/posts/ciclo-de-vida-de-los-uiviewcontrollers/</link>
+      <pubDate>Tue, 07 Dec 2021 17:16:07 +0100</pubDate>
+      
+      <guid>/posts/ciclo-de-vida-de-los-uiviewcontrollers/</guid>
+      <description>Un descubrimiento: en principio desde iOS 13, cuando presentas un viewController encima de otro, no se llaman los métodos viewWillDissapear ni viewDidDissapear del ViewController llamante. La solución, al menos de momento, es poner el modalPresentationStyle del viewController a mostrar, de este modo:
+viewController.modalPresentationStyle = .fullScreen Split Screen Hay muchos cambios en el [[Ciclo de vida de los UIViewControllers]] en cuanto metemos en la ecuación la multitarea de iPad, particularmente la funcionalidad de #SplitScreen.</description>
+    </item>
+    
+  </channel>
+</rss>
