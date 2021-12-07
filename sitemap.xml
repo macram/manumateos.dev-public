@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/ciclo-de-vida-de-los-uiviewcontrollers/</loc>
-    <lastmod>2021-12-07T17:16:07+01:00</lastmod>
+    <loc>/posts/habilitar-ssh-sin-teclado-ni-raton-en-linux/</loc>
+    <lastmod>2021-12-07T18:05:06+01:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2021-12-07T17:16:07+01:00</lastmod>
+    <lastmod>2021-12-07T18:05:06+01:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
+    <lastmod>2021-12-07T18:05:06+01:00</lastmod>
+  </url><url>
+    <loc>/posts/doble-punto-y-coma-en-localizable/</loc>
+    <lastmod>2021-12-07T18:04:28+01:00</lastmod>
+  </url><url>
+    <loc>/posts/ciclo-de-vida-de-los-uiviewcontrollers/</loc>
     <lastmod>2021-12-07T17:16:07+01:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
