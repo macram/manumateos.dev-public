@@ -6,7 +6,17 @@
     <description>Recent content in iOS on manumateos.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-ES</language>
-    <lastBuildDate>Tue, 07 Dec 2021 18:18:49 +0100</lastBuildDate><atom:link href="/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Dec 2021 19:00:26 +0100</lastBuildDate><atom:link href="/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Degradados: ¿CAGradient o UIImage?</title>
+      <link>/posts/cagradient-or-uiimage/</link>
+      <pubDate>Sun, 19 Dec 2021 19:00:26 +0100</pubDate>
+      
+      <guid>/posts/cagradient-or-uiimage/</guid>
+      <description>Hace unos días tuve la disyuntiva, a la hora de realizar un desarrollo de una parte de una interfaz gráfica razonablemente compleja, de si construir en tiempo de ejecución un UIImage a partir de un degradado con transparencias, o si usar directamente un CAGradientLayer, que es lo que había usado toda la vida.
+Como me entró la duda, decidí investigar. El primer paso siempre es buscar en Google, y en este caso ya alguien había hecho esta misma comparación.</description>
+    </item>
+    
     <item>
       <title>UIView.userInteractionEnabled</title>
       <link>/posts/userinteractionenabled/</link>
