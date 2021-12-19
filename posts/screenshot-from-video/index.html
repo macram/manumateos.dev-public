@@ -127,6 +127,8 @@ El método recomendado, en principio, es tener un AVPlayer con el rate establec
     
     <a class="" href="/sobre-mi/">sobre mí</a>
     
+    <a class="" href="/links/">links</a>
+    
   </nav>
   
 
@@ -164,6 +166,8 @@ El método recomendado, en principio, es tener un AVPlayer con el rate establec
     </p>
     <h1>Obtener capturas de pantalla de un vídeo</h1>
   </header>
+  
+
   <section class="post-content"><p>La funcionalidad que estoy intentando implementar implica una cuestión muy concreta: necesito mostrar miniaturas de momentos aleatorios de un vídeo en streaming HLS. El ejemplo es el reproductor de YouTube: cuando se arrastra la barra atrás o adelante, se muestra una miniatura para indicar qué parte del vídeo es la afectada.</p>
 <p>El método recomendado, en principio, es <strong>tener un AVPlayer con el rate establecido a 0</strong>, de manera que el propio AVPlayer se encargue de llevar el vídeo a esos momentos, pararlo y mostrar la imagen en la pantalla. Ese player ya puede estar incrustado en cualquier AVPlayerViewController (y la view de este controller, como una subview de cualquier otra vista), sin ningún problema.</p>
 <p><a href="https://stackoverflow.com/questions/54617558/failed-to-get-video-thumbnail-from-avplayer-using-fairplay-hls">Failed to get video thumbnail from AVPlayer using Fairplay HLS</a></p>

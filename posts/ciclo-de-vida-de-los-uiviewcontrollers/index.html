@@ -127,6 +127,8 @@ viewController.modalPresentationStyle = .fullScreen Split Screen Hay muchos camb
     
     <a class="" href="/sobre-mi/">sobre mí</a>
     
+    <a class="" href="/links/">links</a>
+    
   </nav>
   
 
@@ -164,6 +166,8 @@ viewController.modalPresentationStyle = .fullScreen Split Screen Hay muchos camb
     </p>
     <h1>Ciclo de vida de los UIViewControllers</h1>
   </header>
+  
+
   <section class="post-content"><p>Un descubrimiento: en principio desde iOS 13, cuando presentas un viewController <em>encima</em> de otro, no se llaman los métodos <code>viewWillDissapear</code> ni <code>viewDidDissapear</code> del ViewController llamante. La solución, al menos de momento, es poner el <code>modalPresentationStyle</code>  del viewController a mostrar, de este modo:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">viewController.modalPresentationStyle = .fullScreen
 </code></pre></div><h2 id="split-screen">Split Screen</h2>

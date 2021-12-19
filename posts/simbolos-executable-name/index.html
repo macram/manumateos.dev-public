@@ -127,6 +127,8 @@ En el “Executable name” no debe haber símbolos. Y este se genera concatenan
     
     <a class="" href="/sobre-mi/">sobre mí</a>
     
+    <a class="" href="/links/">links</a>
+    
   </nav>
   
 
@@ -164,6 +166,8 @@ En el “Executable name” no debe haber símbolos. Y este se genera concatenan
     </p>
     <h1>Símbolos en el Executable name</h1>
   </header>
+  
+
   <section class="post-content"><p>Cuando se cambia el nombre mostrado a una app de iOS, si éste tiene símbolos (p.ej Movistar+), es mejor hacerlo directamente en la clave “Bundle display name” del Info.plist, para evitar que la App Store rechace la build.</p>
 <p>En el “<em>Executable name</em>” no debe haber símbolos. Y <a href="https://developer.apple.com/library/archive/documentation/DeveloperTools/Reference/XcodeBuildSettingRef/1-Build_Setting_Reference/build_setting_ref.html#//apple_ref/doc/uid/TP40003931-CH3-SW71">este se genera concatenando varios valores</a>; <code>$EXECUTABLE_PREFIX$PRODUCT_NAME$EXECUTABLE_SUFFIX</code>. Si cambias el valor directamente en el proyecto, se establece esa variable, y al generar la build (o al subirse a TestFlight) dará error.</p>
 </section>
