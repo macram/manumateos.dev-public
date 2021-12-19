@@ -2,22 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/links/30-tips-to-make-you-a-better-ios-dev/</loc>
+    <lastmod>2021-12-19T19:40:34+01:00</lastmod>
+  </url><url>
+    <loc>/tags/ios/</loc>
+    <lastmod>2021-12-19T19:40:34+01:00</lastmod>
+  </url><url>
+    <loc>/links/</loc>
+    <lastmod>2021-12-19T19:40:34+01:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-12-19T19:40:34+01:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2021-12-19T19:40:34+01:00</lastmod>
+  </url><url>
     <loc>/tags/coreanimation/</loc>
     <lastmod>2021-12-19T19:00:26+01:00</lastmod>
   </url><url>
     <loc>/posts/cagradient-or-uiimage/</loc>
     <lastmod>2021-12-19T19:00:26+01:00</lastmod>
   </url><url>
-    <loc>/tags/ios/</loc>
-    <lastmod>2021-12-19T19:00:26+01:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2021-12-19T19:00:26+01:00</lastmod>
-  </url><url>
     <loc>/posts/</loc>
-    <lastmod>2021-12-19T19:00:26+01:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2021-12-19T19:00:26+01:00</lastmod>
   </url><url>
     <loc>/posts/crear-primer-sitio-web-hugo/</loc>
@@ -75,6 +81,8 @@
     <lastmod>2021-12-07T17:16:07+01:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
+  </url><url>
+    <loc>/series/</loc>
   </url><url>
     <loc>/sobre-mi/</loc>
   </url>

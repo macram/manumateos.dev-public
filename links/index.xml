@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Links on manumateos.dev</title>
+    <link>/links/</link>
+    <description>Recent content in Links on manumateos.dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Sun, 19 Dec 2021 19:40:34 +0100</lastBuildDate><atom:link href="/links/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>30 Tips to Make You a Better Ios Dev</title>
+      <link>/links/30-tips-to-make-you-a-better-ios-dev/</link>
+      <pubDate>Sun, 19 Dec 2021 19:40:34 +0100</pubDate>
+      
+      <guid>/links/30-tips-to-make-you-a-better-ios-dev/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
