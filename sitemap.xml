@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/links/</loc>
-    <lastmod>2021-12-19T20:02:17+01:00</lastmod>
-  </url><url>
-    <loc>/tags/links/</loc>
-    <lastmod>2021-12-19T20:02:17+01:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2021-12-19T20:02:17+01:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2021-12-19T20:02:17+01:00</lastmod>
-  </url><url>
     <loc>/links/30-tips-to-make-you-a-better-ios-dev/</loc>
     <lastmod>2021-12-19T19:40:34+01:00</lastmod>
   </url><url>
+    <loc>/links/</loc>
+    <lastmod>2021-12-19T19:40:34+01:00</lastmod>
+  </url><url>
     <loc>/tags/ios/</loc>
+    <lastmod>2021-12-19T19:40:34+01:00</lastmod>
+  </url><url>
+    <loc>/tags/links/</loc>
+    <lastmod>2021-12-19T19:40:34+01:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-12-19T19:40:34+01:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
     <lastmod>2021-12-19T19:40:34+01:00</lastmod>
   </url><url>
     <loc>/tags/coreanimation/</loc>

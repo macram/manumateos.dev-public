@@ -6,16 +6,7 @@
     <description>Recent content in Links on manumateos.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Sun, 19 Dec 2021 20:02:17 +0100</lastBuildDate><atom:link href="/tags/links/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Enlaces</title>
-      <link>/links/</link>
-      <pubDate>Sun, 19 Dec 2021 20:02:17 +0100</pubDate>
-      
-      <guid>/links/</guid>
-      <description>En esta página recopilaré enlaces que encuentre interesantes por Internet. Realmente muchos otros artículos también referenciarán en muchos casos a otras páginas que encuentre en mi investigación; no obstante los artículos tendrán una finalidad concreta, encontrar la solución a un problema concreto, mientras que los enlaces que encontrarás en esta sección son simplemente artículos que me han parecido interesantes.</description>
-    </item>
-    
+    <lastBuildDate>Sun, 19 Dec 2021 19:40:34 +0100</lastBuildDate><atom:link href="/tags/links/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>30 Tips to Make You a Better iOS Dev</title>
       <link>/links/30-tips-to-make-you-a-better-ios-dev/</link>
@@ -23,6 +14,15 @@
       
       <guid>/links/30-tips-to-make-you-a-better-ios-dev/</guid>
       <description>Rony Fadel ha elaborado una lista (en inglés) con 30 consejos que podrían hacernos mejorar como desarrolladores iOS.</description>
+    </item>
+    
+    <item>
+      <title>Enlaces</title>
+      <link>/links/</link>
+      <pubDate>Sun, 19 Dec 2021 19:40:34 +0100</pubDate>
+      
+      <guid>/links/</guid>
+      <description>En esta página recopilaré enlaces que encuentre interesantes por Internet. Realmente muchos otros artículos también referenciarán en muchos casos a otras páginas que encuentre en mi investigación; no obstante los artículos tendrán una finalidad concreta, encontrar la solución a un problema concreto, mientras que los enlaces que encontrarás en esta sección son simplemente artículos que me han parecido interesantes.</description>
     </item>
     
   </channel>
