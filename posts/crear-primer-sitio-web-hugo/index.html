@@ -77,7 +77,7 @@
   <meta itemprop="name" content="Crear primer sitio Web con Hugo">
 <meta itemprop="description" content="Llevaba tiempo queriendo escribir una bitácora de desarrollo donde poner las notas que voy recopilando mientras voy desarrollando. Y he intentado varias cosas: poner una página pública en Notion (herramienta que no he conseguido acostumbrarme a usar) o incluso montar otro sitio Web con WordPress. Pero en realidad buscaba una herramienta bastante más sencilla, algo que me permitiera escribir en Markdown y publicar un sitio Web, sin más. WordPress en este caso era matar moscas a cañonazos."><meta itemprop="datePublished" content="2021-12-07T18:21:45+01:00" />
 <meta itemprop="dateModified" content="2021-12-07T18:21:45+01:00" />
-<meta itemprop="wordCount" content="546">
+<meta itemprop="wordCount" content="545">
 <meta itemprop="keywords" content="Hugo,Web," />
   
   <meta name="twitter:card" content="summary"/>
@@ -178,14 +178,14 @@
 </ol>
 <h2 id="repositorios">Repositorios</h2>
 <p>Estoy usando dos repositorios. Uno privado con la configuración del site y uno público con la carpeta <code>/public</code> que se genera cuando ejecuto <code>hugo -D</code>. Este repositorio público es el que tiene configurado GitHub Pages.</p>
-<p>En mi ordenador en realidad el repositorio privado es la carpeta del proyecto completo (digamos <code>~/manumateos.dev</code>), y luego he creado un submódulo con la parte pública, que va al repositorio público.</p>
-<p>La carpeta <code>/public</code> puede estar en el fichero <code>.gitignore</code> del repositorio “no público”. Al final va a estar en el submódulo de Git y se puede generar sin ningún problema cada vez que sea necesario con <code>hugo -D</code>.</p>
-<p>Para crear el submódulo que a su vez va a ser el sitio Web público:</p>
+<p>En mi ordenador en realidad el repositorio privado es la carpeta del proyecto completo (digamos <code>~/manumateos.dev</code>), y luego he creado un segundo repositorio con la parte pública, que va al repositorio público.</p>
+<p>La carpeta <code>/public</code> puede estar en el fichero <code>.gitignore</code> del repositorio “no público”. Al final va a estar en el otro repositorio y se puede generar sin ningún problema cada vez que sea necesario con <code>hugo -D</code>.</p>
+<p>Para crear el segundo repositorio que a su vez va a ser el sitio Web público:</p>
 <ol>
 <li>Generar por primera vez el sitio Web con <code>hugo -D</code> en la carpeta del sitio.</li>
 <li>Navegar a la carpeta: <code>cd public</code></li>
 <li>Crear un nuevo repositorio en esta carpeta. <code>git init</code></li>
-<li>Añadir el repositorio que va a ser público como remoto del subrepositorio. <code>git remote add origin https://github.com/user/repo.git</code></li>
+<li>Añadir el repositorio que va a ser público como remoto. <code>git remote add origin https://github.com/user/repo.git</code></li>
 <li>Subirlo. <code>git push</code>. A lo mejor hay que poner las ramas (<code>git push main origin/main</code> o algo parecido).</li>
 </ol>
 <p>Luego simplemente configuré GitHub Pages en el repositorio y lo configuré como enseño en la captura.</p>
