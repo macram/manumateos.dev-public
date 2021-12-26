@@ -6,7 +6,18 @@
     <description>Recent content in Posts on manumateos.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Sun, 19 Dec 2021 19:00:26 +0100</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Dec 2021 21:00:26 +0100</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crear un fichero Zip con contraseña en macOS</title>
+      <link>/posts/crear-fichero-zip-contrasen%CC%83a/</link>
+      <pubDate>Sun, 26 Dec 2021 21:00:26 +0100</pubDate>
+      
+      <guid>/posts/crear-fichero-zip-contrasen%CC%83a/</guid>
+      <description>He tenido la necesidad de crear un fichero Zip con contraseña para almacenar cierta información, y no he encontrado la manera de hacerlo a través de una interfaz gráfica.
+Por suerte con la terminal es bastante sencillo. Es un único comando tras navegar a la carpeta que contiene los ficheros que quieres comprimir:
+zip -er fichero.zip * Al ejecutar esto el programa nos solicitará dos veces la contraseña con la que queremos proteger el archivo.</description>
+    </item>
+    
     <item>
       <title>Degradados: ¿CAGradient o UIImage?</title>
       <link>/posts/cagradient-or-uiimage/</link>
