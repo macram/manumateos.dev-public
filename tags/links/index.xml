@@ -6,11 +6,20 @@
     <description>Recent content in Links on manumateos.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Sat, 22 Jan 2022 19:40:34 +0100</lastBuildDate><atom:link href="/tags/links/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Jan 2022 19:40:34 +0100</lastBuildDate><atom:link href="/tags/links/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Discover concurrency</title>
+      <link>/links/discover-concurrency/</link>
+      <pubDate>Sun, 23 Jan 2022 19:40:34 +0100</pubDate>
+      
+      <guid>/links/discover-concurrency/</guid>
+      <description>John Sundell tiene una página que es ideal para comenzar a conocer el nuevo sistema de concurrencia de Swift (async, await y esa chufla).</description>
+    </item>
+    
     <item>
       <title>Enlaces</title>
       <link>/links/</link>
-      <pubDate>Sat, 22 Jan 2022 19:40:34 +0100</pubDate>
+      <pubDate>Sun, 23 Jan 2022 19:40:34 +0100</pubDate>
       
       <guid>/links/</guid>
       <description>En esta página recopilaré enlaces que encuentre interesantes por Internet. Realmente muchos otros artículos también referenciarán en muchos casos a otras páginas que encuentre en mi investigación; no obstante los artículos tendrán una finalidad concreta, encontrar la solución a un problema concreto, mientras que los enlaces que encontrarás en esta sección son simplemente artículos que me han parecido interesantes.</description>
