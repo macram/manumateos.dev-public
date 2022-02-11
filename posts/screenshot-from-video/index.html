@@ -1,219 +1,86 @@
-<!DOCTYPE html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<html lang="es">
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-  
-  <title>Obtener capturas de pantalla de un vídeo - manumateos.dev</title>
-
-  
-  
-  <meta name="description" content="La funcionalidad que estoy intentando implementar implica una cuestión muy concreta: necesito mostrar miniaturas de momentos aleatorios de un vídeo en streaming HLS. El ejemplo es el reproductor de YouTube: cuando se arrastra la barra atrás o adelante, se muestra una miniatura para indicar qué parte del vídeo es la afectada.
-El método recomendado, en principio, es tener un AVPlayer con el rate establecido a 0, de manera que el propio AVPlayer se encargue de llevar el vídeo a esos momentos, pararlo y mostrar la imagen en la pantalla." />
-  <meta name="author" content="" />
-  
-
-  
-  
-  
-  
-  
-  
-  <link rel="preload stylesheet" as="style" href="/app.min.css" />
-
-  
-
-  
-  <link rel="preload" as="image" href="/theme.png" />
-
-  
-  <link rel="preload" as="image" href="/twitter.svg" />
-  
-  <link rel="preload" as="image" href="/github.svg" />
-  
-
-  
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
-  
-  <meta name="generator" content="Hugo 0.89.4" />
-
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  <meta property="og:title" content="Obtener capturas de pantalla de un vídeo" />
+<!doctype html><html lang=es>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>Obtener capturas de pantalla de un vídeo - manumateos.dev</title>
+<meta name=description content="La funcionalidad que estoy intentando implementar implica una cuestión muy concreta: necesito mostrar miniaturas de momentos aleatorios de un vídeo en streaming HLS. El ejemplo es el reproductor de YouTube: cuando se arrastra la barra atrás o adelante, se muestra una miniatura para indicar qué parte del vídeo es la afectada.
+El método recomendado, en principio, es tener un AVPlayer con el rate establecido a 0, de manera que el propio AVPlayer se encargue de llevar el vídeo a esos momentos, pararlo y mostrar la imagen en la pantalla.">
+<meta name=author content>
+<link rel="preload stylesheet" as=style href=/app.min.css>
+<link rel=preload as=image href=/theme.png>
+<link rel=preload as=image href=/twitter.svg>
+<link rel=preload as=image href=/github.svg>
+<link rel=icon href=/favicon.ico>
+<link rel=apple-touch-icon href=/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<meta property="og:title" content="Obtener capturas de pantalla de un vídeo">
 <meta property="og:description" content="La funcionalidad que estoy intentando implementar implica una cuestión muy concreta: necesito mostrar miniaturas de momentos aleatorios de un vídeo en streaming HLS. El ejemplo es el reproductor de YouTube: cuando se arrastra la barra atrás o adelante, se muestra una miniatura para indicar qué parte del vídeo es la afectada.
-El método recomendado, en principio, es tener un AVPlayer con el rate establecido a 0, de manera que el propio AVPlayer se encargue de llevar el vídeo a esos momentos, pararlo y mostrar la imagen en la pantalla." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/screenshot-from-video/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-12-07T18:16:38+01:00" />
-<meta property="article:modified_time" content="2021-12-07T18:16:38+01:00" />
-
-
-  
-  <meta itemprop="name" content="Obtener capturas de pantalla de un vídeo">
-<meta itemprop="description" content="La funcionalidad que estoy intentando implementar implica una cuestión muy concreta: necesito mostrar miniaturas de momentos aleatorios de un vídeo en streaming HLS. El ejemplo es el reproductor de YouTube: cuando se arrastra la barra atrás o adelante, se muestra una miniatura para indicar qué parte del vídeo es la afectada.
-El método recomendado, en principio, es tener un AVPlayer con el rate establecido a 0, de manera que el propio AVPlayer se encargue de llevar el vídeo a esos momentos, pararlo y mostrar la imagen en la pantalla."><meta itemprop="datePublished" content="2021-12-07T18:16:38+01:00" />
-<meta itemprop="dateModified" content="2021-12-07T18:16:38+01:00" />
-<meta itemprop="wordCount" content="243">
-<meta itemprop="keywords" content="AVKit,iOS," />
-  
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Obtener capturas de pantalla de un vídeo"/>
-<meta name="twitter:description" content="La funcionalidad que estoy intentando implementar implica una cuestión muy concreta: necesito mostrar miniaturas de momentos aleatorios de un vídeo en streaming HLS. El ejemplo es el reproductor de YouTube: cuando se arrastra la barra atrás o adelante, se muestra una miniatura para indicar qué parte del vídeo es la afectada.
-El método recomendado, en principio, es tener un AVPlayer con el rate establecido a 0, de manera que el propio AVPlayer se encargue de llevar el vídeo a esos momentos, pararlo y mostrar la imagen en la pantalla."/>
-
-  
-  
+El método recomendado, en principio, es tener un AVPlayer con el rate establecido a 0, de manera que el propio AVPlayer se encargue de llevar el vídeo a esos momentos, pararlo y mostrar la imagen en la pantalla.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/posts/screenshot-from-video/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-12-07T18:16:38+01:00">
+<meta property="article:modified_time" content="2021-12-07T18:16:38+01:00">
+<meta itemprop=name content="Obtener capturas de pantalla de un vídeo">
+<meta itemprop=description content="La funcionalidad que estoy intentando implementar implica una cuestión muy concreta: necesito mostrar miniaturas de momentos aleatorios de un vídeo en streaming HLS. El ejemplo es el reproductor de YouTube: cuando se arrastra la barra atrás o adelante, se muestra una miniatura para indicar qué parte del vídeo es la afectada.
+El método recomendado, en principio, es tener un AVPlayer con el rate establecido a 0, de manera que el propio AVPlayer se encargue de llevar el vídeo a esos momentos, pararlo y mostrar la imagen en la pantalla."><meta itemprop=datePublished content="2021-12-07T18:16:38+01:00">
+<meta itemprop=dateModified content="2021-12-07T18:16:38+01:00">
+<meta itemprop=wordCount content="243">
+<meta itemprop=keywords content="AVKit,iOS,">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Obtener capturas de pantalla de un vídeo">
+<meta name=twitter:description content="La funcionalidad que estoy intentando implementar implica una cuestión muy concreta: necesito mostrar miniaturas de momentos aleatorios de un vídeo en streaming HLS. El ejemplo es el reproductor de YouTube: cuando se arrastra la barra atrás o adelante, se muestra una miniatura para indicar qué parte del vídeo es la afectada.
+El método recomendado, en principio, es tener un AVPlayer con el rate establecido a 0, de manera que el propio AVPlayer se encargue de llevar el vídeo a esos momentos, pararlo y mostrar la imagen en la pantalla.">
 </head>
-
-
-  <body class="not-ready" data-menu="true">
-    <header class="header">
-  
-  <p class="logo">
-    <a class="site-name" href="/">manumateos.dev</a><a class="btn-dark"></a>
-  </p>
-  
-
-  <script>
-    let bodyClx = document.body.classList;
-    let btnDark = document.querySelector('.btn-dark');
-    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
-    let darkVal = localStorage.getItem('dark');
-
-    let setDark = (isDark) => {
-      bodyClx[isDark ? 'add' : 'remove']('dark');
-      localStorage.setItem('dark', isDark ? 'yes' : 'no');
-    };
-
-    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
-    requestAnimationFrame(() => bodyClx.remove('not-ready'));
-
-    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
-    sysDark.addEventListener('change', (event) => setDark(event.matches));
-  </script>
-
-  
-  
-  <nav class="menu">
-    
-    <a class="" href="/">home</a>
-    
-    <a class="" href="/sobre-mi/">sobre mí</a>
-    
-    <a class="" href="/links/">links</a>
-    
-  </nav>
-  
-
-  
-  <nav class="social">
-    
-    <a
-      class="twitter"
-      style="--url: url(./twitter.svg)"
-      href="https://twitter.com/manumateos"
-      target="_blank"
-    ></a>
-    
-    <a
-      class="github"
-      style="--url: url(./github.svg)"
-      href="https://github.com/macram"
-      target="_blank"
-    ></a>
-    
-  </nav>
-  
+<body class=not-ready data-menu=true>
+<header class=header>
+<p class=logo>
+<a class=site-name href=/>manumateos.dev</a><a class=btn-dark></a>
+</p>
+<script>let bodyClx=document.body.classList,btnDark=document.querySelector('.btn-dark'),sysDark=window.matchMedia('(prefers-color-scheme: dark)'),darkVal=localStorage.getItem('dark'),setDark=a=>{bodyClx[a?'add':'remove']('dark'),localStorage.setItem('dark',a?'yes':'no')};setDark(darkVal?darkVal==='yes':sysDark.matches),requestAnimationFrame(()=>bodyClx.remove('not-ready')),btnDark.addEventListener('click',()=>setDark(!bodyClx.contains('dark'))),sysDark.addEventListener('change',a=>setDark(a.matches))</script>
+<nav class=menu>
+<a href=/>home</a>
+<a href=/sobre-mi/>sobre mí</a>
+<a href=/links/>links</a>
+</nav>
+<nav class=social>
+<a class=twitter style=--url:url(./twitter.svg) href=https://twitter.com/manumateos target=_blank></a>
+<a class=github style=--url:url(./github.svg) href=https://github.com/macram target=_blank></a>
+</nav>
 </header>
-
-
-    <main class="main">
-
-<article class="post-single">
-  <header class="post-title">
-    <p>
-      
-      <time>Dec 7, 2021</time>
-      
-      
-    </p>
-    <h1>Obtener capturas de pantalla de un vídeo</h1>
-  </header>
-  
-
-  <section class="post-content"><p>La funcionalidad que estoy intentando implementar implica una cuestión muy concreta: necesito mostrar miniaturas de momentos aleatorios de un vídeo en streaming HLS. El ejemplo es el reproductor de YouTube: cuando se arrastra la barra atrás o adelante, se muestra una miniatura para indicar qué parte del vídeo es la afectada.</p>
+<main class=main>
+<article class=post-single>
+<header class=post-title>
+<p>
+<time>Dec 7, 2021</time>
+</p>
+<h1>Obtener capturas de pantalla de un vídeo</h1>
+</header>
+<section class=post-content><p>La funcionalidad que estoy intentando implementar implica una cuestión muy concreta: necesito mostrar miniaturas de momentos aleatorios de un vídeo en streaming HLS. El ejemplo es el reproductor de YouTube: cuando se arrastra la barra atrás o adelante, se muestra una miniatura para indicar qué parte del vídeo es la afectada.</p>
 <p>El método recomendado, en principio, es <strong>tener un AVPlayer con el rate establecido a 0</strong>, de manera que el propio AVPlayer se encargue de llevar el vídeo a esos momentos, pararlo y mostrar la imagen en la pantalla. Ese player ya puede estar incrustado en cualquier AVPlayerViewController (y la view de este controller, como una subview de cualquier otra vista), sin ningún problema.</p>
-<p><a href="https://stackoverflow.com/questions/54617558/failed-to-get-video-thumbnail-from-avplayer-using-fairplay-hls">Failed to get video thumbnail from AVPlayer using Fairplay HLS</a></p>
-<h2 id="avassetimagegenerator">AVAssetImageGenerator</h2>
-<p>El método <strong><a href="https://developer.apple.com/documentation/avfoundation/avassetimagegenerator/1387303-copycgimage"><code>AVAssetImageGenerator.copyCGImageAtTime</code></a></strong> en principio debería funcionar, pero aparentemente no genera resultados para <em>assets</em> que sean remotos y no locales. No descarto que el problema estuviera relacionado con el DRM que utilizan los streams que manejo, y que en ese momento no estaba tratando de ninguna manera.</p>
-<p><a href="https://medium.com/@PaulWall43/generating-video-thumnails-at-runtime-in-ios-swift-a2b092301c9a">Generating Video Thumbnails at Runtime in iOS (Swift)</a></p>
+<p><a href=https://stackoverflow.com/questions/54617558/failed-to-get-video-thumbnail-from-avplayer-using-fairplay-hls>Failed to get video thumbnail from AVPlayer using Fairplay HLS</a></p>
+<h2 id=avassetimagegenerator>AVAssetImageGenerator</h2>
+<p>El método <strong><a href=https://developer.apple.com/documentation/avfoundation/avassetimagegenerator/1387303-copycgimage><code>AVAssetImageGenerator.copyCGImageAtTime</code></a></strong> en principio debería funcionar, pero aparentemente no genera resultados para <em>assets</em> que sean remotos y no locales. No descarto que el problema estuviera relacionado con el DRM que utilizan los streams que manejo, y que en ese momento no estaba tratando de ninguna manera.</p>
+<p><a href=https://medium.com/@PaulWall43/generating-video-thumnails-at-runtime-in-ios-swift-a2b092301c9a>Generating Video Thumbnails at Runtime in iOS (Swift)</a></p>
 <p>Además, tendría una penalización de rendimiento bastante fuerte (el método funciona de manera síncrona; para este caso habría que generar determinadas capturas en segundo plano y cachearlas de alguna manera).</p>
 <p>Este método podría servir para tener marcas de capítulos, pero para ir generando capturas en vivo, que es el caso que necesito resolver. Habría otro método específico que podría servir todavía mejor: <code>[generateCGImagesAsynchronously(forTimes:completionHandler:)](https://developer.apple.com/documentation/avfoundation/avassetimagegenerator/1388100-generatecgimagesasynchronously)</code>.</p>
 </section>
-
-  
-  
-  <footer class="post-tags">
-     
-    <a href="/tags/avkit">AVKit</a>
-     
-    <a href="/tags/ios">iOS</a>
-    
-  </footer>
-  
-
-  
-  
-  
-  <nav class="post-nav">
-    
-    <a class="prev" href="/posts/uibutton-tintcolor/"><span>←</span><span>UIButton.tintColor</span></a>
-     
-    <a class="next" href="/posts/simbolos-executable-name/"><span>Símbolos en el Executable name</span><span>→</span></a>
-    
-  </nav>
-  
-
-  
-  
-</article>
-
-</main>
-
-    <footer class="footer">
-  <p>&copy; 2022 <a href="/">manumateos.dev</a></p>
-  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
-  <p>
-    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
-  </p>
+<footer class=post-tags>
+<a href=/tags/avkit>AVKit</a>
+<a href=/tags/ios>iOS</a>
 </footer>
-
-  </body>
+<nav class=post-nav>
+<a class=prev href=/posts/uibutton-tintcolor/><span>←</span><span>UIButton.tintColor</span></a>
+<a class=next href=/posts/simbolos-executable-name/><span>Símbolos en el Executable name</span><span>→</span></a>
+</nav>
+</article>
+</main>
+<footer class=footer>
+<p>&copy; 2022 <a href=/>manumateos.dev</a></p>
+<p>Powered by <a href=https://gohugo.io/ rel=noopener target=_blank>Hugo️️</a>️</p>
+<p>
+<a href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Paper 5.1</a>
+</p>
+</footer>
+</body>
 </html>

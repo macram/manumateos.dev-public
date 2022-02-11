@@ -1,223 +1,91 @@
-<!DOCTYPE html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<html lang="es">
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-  
-  <title>hg shelve - manumateos.dev</title>
-
-  
-  
-  <meta name="description" content="hg unshelve &lt;nombre&gt; sirve para sacar un changeset de un shelve. Si hay cambios pendientes y se genera un conflicto, terminaremos con dos cabezas en la rama actual, lo cual es un embrollo.
+<!doctype html><html lang=es>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>hg shelve - manumateos.dev</title>
+<meta name=description content="hg unshelve <nombre> sirve para sacar un changeset de un shelve. Si hay cambios pendientes y se genera un conflicto, terminaremos con dos cabezas en la rama actual, lo cual es un embrollo.
 Las dos salidas posibles son:
- Llevar a cabo el merge y continuar el unshelve (hg unshelve --continue) Abortar el unshelve (hg unshelve --abort), hacer lo que sea con los cambios pendientes, y reiniciar el unshelve.  SourceTree no tiene un comando gráfico para abortar el unshelve." />
-  <meta name="author" content="" />
-  
-
-  
-  
-  
-  
-  
-  
-  <link rel="preload stylesheet" as="style" href="/app.min.css" />
-
-  
-
-  
-  <link rel="preload" as="image" href="/theme.png" />
-
-  
-  <link rel="preload" as="image" href="/twitter.svg" />
-  
-  <link rel="preload" as="image" href="/github.svg" />
-  
-
-  
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
-  
-  <meta name="generator" content="Hugo 0.89.4" />
-
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  <meta property="og:title" content="hg shelve" />
-<meta property="og:description" content="hg unshelve &lt;nombre&gt; sirve para sacar un changeset de un shelve. Si hay cambios pendientes y se genera un conflicto, terminaremos con dos cabezas en la rama actual, lo cual es un embrollo.
+ Llevar a cabo el merge y continuar el unshelve (hg unshelve --continue) Abortar el unshelve (hg unshelve --abort), hacer lo que sea con los cambios pendientes, y reiniciar el unshelve.  SourceTree no tiene un comando gráfico para abortar el unshelve.">
+<meta name=author content>
+<link rel="preload stylesheet" as=style href=/app.min.css>
+<link rel=preload as=image href=/theme.png>
+<link rel=preload as=image href=/twitter.svg>
+<link rel=preload as=image href=/github.svg>
+<link rel=icon href=/favicon.ico>
+<link rel=apple-touch-icon href=/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<meta property="og:title" content="hg shelve">
+<meta property="og:description" content="hg unshelve <nombre> sirve para sacar un changeset de un shelve. Si hay cambios pendientes y se genera un conflicto, terminaremos con dos cabezas en la rama actual, lo cual es un embrollo.
 Las dos salidas posibles son:
- Llevar a cabo el merge y continuar el unshelve (hg unshelve --continue) Abortar el unshelve (hg unshelve --abort), hacer lo que sea con los cambios pendientes, y reiniciar el unshelve.  SourceTree no tiene un comando gráfico para abortar el unshelve." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/hg-shelve/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-12-07T18:14:17+01:00" />
-<meta property="article:modified_time" content="2021-12-07T18:14:17+01:00" />
-
-
-  
-  <meta itemprop="name" content="hg shelve">
-<meta itemprop="description" content="hg unshelve &lt;nombre&gt; sirve para sacar un changeset de un shelve. Si hay cambios pendientes y se genera un conflicto, terminaremos con dos cabezas en la rama actual, lo cual es un embrollo.
+ Llevar a cabo el merge y continuar el unshelve (hg unshelve --continue) Abortar el unshelve (hg unshelve --abort), hacer lo que sea con los cambios pendientes, y reiniciar el unshelve.  SourceTree no tiene un comando gráfico para abortar el unshelve.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/posts/hg-shelve/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-12-07T18:14:17+01:00">
+<meta property="article:modified_time" content="2021-12-07T18:14:17+01:00">
+<meta itemprop=name content="hg shelve">
+<meta itemprop=description content="hg unshelve <nombre> sirve para sacar un changeset de un shelve. Si hay cambios pendientes y se genera un conflicto, terminaremos con dos cabezas en la rama actual, lo cual es un embrollo.
 Las dos salidas posibles son:
- Llevar a cabo el merge y continuar el unshelve (hg unshelve --continue) Abortar el unshelve (hg unshelve --abort), hacer lo que sea con los cambios pendientes, y reiniciar el unshelve.  SourceTree no tiene un comando gráfico para abortar el unshelve."><meta itemprop="datePublished" content="2021-12-07T18:14:17+01:00" />
-<meta itemprop="dateModified" content="2021-12-07T18:14:17+01:00" />
-<meta itemprop="wordCount" content="139">
-<meta itemprop="keywords" content="Mercurial," />
-  
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="hg shelve"/>
-<meta name="twitter:description" content="hg unshelve &lt;nombre&gt; sirve para sacar un changeset de un shelve. Si hay cambios pendientes y se genera un conflicto, terminaremos con dos cabezas en la rama actual, lo cual es un embrollo.
+ Llevar a cabo el merge y continuar el unshelve (hg unshelve --continue) Abortar el unshelve (hg unshelve --abort), hacer lo que sea con los cambios pendientes, y reiniciar el unshelve.  SourceTree no tiene un comando gráfico para abortar el unshelve."><meta itemprop=datePublished content="2021-12-07T18:14:17+01:00">
+<meta itemprop=dateModified content="2021-12-07T18:14:17+01:00">
+<meta itemprop=wordCount content="139">
+<meta itemprop=keywords content="Mercurial,">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="hg shelve">
+<meta name=twitter:description content="hg unshelve <nombre> sirve para sacar un changeset de un shelve. Si hay cambios pendientes y se genera un conflicto, terminaremos con dos cabezas en la rama actual, lo cual es un embrollo.
 Las dos salidas posibles son:
- Llevar a cabo el merge y continuar el unshelve (hg unshelve --continue) Abortar el unshelve (hg unshelve --abort), hacer lo que sea con los cambios pendientes, y reiniciar el unshelve.  SourceTree no tiene un comando gráfico para abortar el unshelve."/>
-
-  
-  
+ Llevar a cabo el merge y continuar el unshelve (hg unshelve --continue) Abortar el unshelve (hg unshelve --abort), hacer lo que sea con los cambios pendientes, y reiniciar el unshelve.  SourceTree no tiene un comando gráfico para abortar el unshelve.">
 </head>
-
-
-  <body class="not-ready" data-menu="true">
-    <header class="header">
-  
-  <p class="logo">
-    <a class="site-name" href="/">manumateos.dev</a><a class="btn-dark"></a>
-  </p>
-  
-
-  <script>
-    let bodyClx = document.body.classList;
-    let btnDark = document.querySelector('.btn-dark');
-    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
-    let darkVal = localStorage.getItem('dark');
-
-    let setDark = (isDark) => {
-      bodyClx[isDark ? 'add' : 'remove']('dark');
-      localStorage.setItem('dark', isDark ? 'yes' : 'no');
-    };
-
-    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
-    requestAnimationFrame(() => bodyClx.remove('not-ready'));
-
-    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
-    sysDark.addEventListener('change', (event) => setDark(event.matches));
-  </script>
-
-  
-  
-  <nav class="menu">
-    
-    <a class="" href="/">home</a>
-    
-    <a class="" href="/sobre-mi/">sobre mí</a>
-    
-    <a class="" href="/links/">links</a>
-    
-  </nav>
-  
-
-  
-  <nav class="social">
-    
-    <a
-      class="twitter"
-      style="--url: url(./twitter.svg)"
-      href="https://twitter.com/manumateos"
-      target="_blank"
-    ></a>
-    
-    <a
-      class="github"
-      style="--url: url(./github.svg)"
-      href="https://github.com/macram"
-      target="_blank"
-    ></a>
-    
-  </nav>
-  
+<body class=not-ready data-menu=true>
+<header class=header>
+<p class=logo>
+<a class=site-name href=/>manumateos.dev</a><a class=btn-dark></a>
+</p>
+<script>let bodyClx=document.body.classList,btnDark=document.querySelector('.btn-dark'),sysDark=window.matchMedia('(prefers-color-scheme: dark)'),darkVal=localStorage.getItem('dark'),setDark=a=>{bodyClx[a?'add':'remove']('dark'),localStorage.setItem('dark',a?'yes':'no')};setDark(darkVal?darkVal==='yes':sysDark.matches),requestAnimationFrame(()=>bodyClx.remove('not-ready')),btnDark.addEventListener('click',()=>setDark(!bodyClx.contains('dark'))),sysDark.addEventListener('change',a=>setDark(a.matches))</script>
+<nav class=menu>
+<a href=/>home</a>
+<a href=/sobre-mi/>sobre mí</a>
+<a href=/links/>links</a>
+</nav>
+<nav class=social>
+<a class=twitter style=--url:url(./twitter.svg) href=https://twitter.com/manumateos target=_blank></a>
+<a class=github style=--url:url(./github.svg) href=https://github.com/macram target=_blank></a>
+</nav>
 </header>
-
-
-    <main class="main">
-
-<article class="post-single">
-  <header class="post-title">
-    <p>
-      
-      <time>Dec 7, 2021</time>
-      
-      
-    </p>
-    <h1>hg shelve</h1>
-  </header>
-  
-
-  <section class="post-content"><p><code>hg unshelve &lt;nombre&gt;</code> sirve para sacar un changeset de un shelve. Si hay cambios pendientes y se genera un conflicto, terminaremos con dos cabezas en la rama actual, lo cual es un embrollo.</p>
+<main class=main>
+<article class=post-single>
+<header class=post-title>
+<p>
+<time>Dec 7, 2021</time>
+</p>
+<h1>hg shelve</h1>
+</header>
+<section class=post-content><p><code>hg unshelve &lt;nombre></code> sirve para sacar un changeset de un shelve. Si hay cambios pendientes y se genera un conflicto, terminaremos con dos cabezas en la rama actual, lo cual es un embrollo.</p>
 <p>Las dos salidas posibles son:</p>
 <ul>
 <li>Llevar a cabo el merge y continuar el unshelve (<code>hg unshelve --continue</code>)</li>
 <li>Abortar el unshelve (<code>hg unshelve --abort</code>), hacer <em>lo que sea</em> con los cambios pendientes, y reiniciar el unshelve.</li>
 </ul>
 <p>SourceTree no tiene un comando gráfico para abortar el unshelve. O al menos no soy capaz de encontrarlo en la interfaz.</p>
-<h2 id="sacar-diff-de-un-shelve">Sacar diff de un shelve</h2>
+<h2 id=sacar-diff-de-un-shelve>Sacar diff de un shelve</h2>
 <p>No encuentro, en SourceTree, la forma de exportar el diff de un shelve. Pero con la terminal es fácil.</p>
-<p><code>hg shelve --patch &lt;nombre&gt;</code> muestra el diff de ese shelve concreto. Si quieres sacarlo a un fichero, simplemente se redirecciona: <code>hg shelve --patch &lt;nombre&gt; &gt; fichero</code>.</p>
+<p><code>hg shelve --patch &lt;nombre></code> muestra el diff de ese shelve concreto. Si quieres sacarlo a un fichero, simplemente se redirecciona: <code>hg shelve --patch &lt;nombre> > fichero</code>.</p>
 </section>
-
-  
-  
-  <footer class="post-tags">
-     
-    <a href="/tags/mercurial">Mercurial</a>
-    
-  </footer>
-  
-
-  
-  
-  
-  <nav class="post-nav">
-    
-    <a class="prev" href="/posts/hg-strip/"><span>←</span><span>hg strip</span></a>
-     
-    <a class="next" href="/posts/habilitar-ssh-sin-teclado-ni-raton-en-linux/"><span>Habilitar SSH sin teclado ni raton en Linux</span><span>→</span></a>
-    
-  </nav>
-  
-
-  
-  
-</article>
-
-</main>
-
-    <footer class="footer">
-  <p>&copy; 2022 <a href="/">manumateos.dev</a></p>
-  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
-  <p>
-    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
-  </p>
+<footer class=post-tags>
+<a href=/tags/mercurial>Mercurial</a>
 </footer>
-
-  </body>
+<nav class=post-nav>
+<a class=prev href=/posts/hg-strip/><span>←</span><span>hg strip</span></a>
+<a class=next href=/posts/habilitar-ssh-sin-teclado-ni-raton-en-linux/><span>Habilitar SSH sin teclado ni raton en Linux</span><span>→</span></a>
+</nav>
+</article>
+</main>
+<footer class=footer>
+<p>&copy; 2022 <a href=/>manumateos.dev</a></p>
+<p>Powered by <a href=https://gohugo.io/ rel=noopener target=_blank>Hugo️️</a>️</p>
+<p>
+<a href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Paper 5.1</a>
+</p>
+</footer>
+</body>
 </html>
