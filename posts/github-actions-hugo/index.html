@@ -1,0 +1,119 @@
+<!doctype html><html lang=es>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>Generar sitio Web con Hugo desde GitHub Actions - manumateos.dev</title>
+<meta name=description content="Ya os conté que este sitio Web está generado utilizando Hugo, un generador de sitios Web estáticos. Y es algo que me gusta, pero tal como lo configuré inicialmente tenía una cuestión que me resultaba incómoda. Básicamente me obligaba a publicar el sitio Web utilizando mi ordenador, puesto que necesitaba ejecutar hugo -D para generar los ficheros HTML, CSS, XML y tal.
+Una mejora que me parece obvia en este caso es que el sitio Web se genere utilizando un sistema de integración continua.">
+<meta name=author content>
+<link rel="preload stylesheet" as=style href=/app.min.css>
+<link rel=preload as=image href=/theme.png>
+<link rel=preload as=image href=/twitter.svg>
+<link rel=preload as=image href=/github.svg>
+<link rel=icon href=/favicon.ico>
+<link rel=apple-touch-icon href=/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<meta property="og:title" content="Generar sitio Web con Hugo desde GitHub Actions">
+<meta property="og:description" content="Ya os conté que este sitio Web está generado utilizando Hugo, un generador de sitios Web estáticos. Y es algo que me gusta, pero tal como lo configuré inicialmente tenía una cuestión que me resultaba incómoda. Básicamente me obligaba a publicar el sitio Web utilizando mi ordenador, puesto que necesitaba ejecutar hugo -D para generar los ficheros HTML, CSS, XML y tal.
+Una mejora que me parece obvia en este caso es que el sitio Web se genere utilizando un sistema de integración continua.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/posts/github-actions-hugo/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2022-02-11T23:48:45+01:00">
+<meta property="article:modified_time" content="2022-02-11T23:48:45+01:00">
+<meta itemprop=name content="Generar sitio Web con Hugo desde GitHub Actions">
+<meta itemprop=description content="Ya os conté que este sitio Web está generado utilizando Hugo, un generador de sitios Web estáticos. Y es algo que me gusta, pero tal como lo configuré inicialmente tenía una cuestión que me resultaba incómoda. Básicamente me obligaba a publicar el sitio Web utilizando mi ordenador, puesto que necesitaba ejecutar hugo -D para generar los ficheros HTML, CSS, XML y tal.
+Una mejora que me parece obvia en este caso es que el sitio Web se genere utilizando un sistema de integración continua."><meta itemprop=datePublished content="2022-02-11T23:48:45+01:00">
+<meta itemprop=dateModified content="2022-02-11T23:48:45+01:00">
+<meta itemprop=wordCount content="467">
+<meta itemprop=keywords content="Hugo,Web,">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Generar sitio Web con Hugo desde GitHub Actions">
+<meta name=twitter:description content="Ya os conté que este sitio Web está generado utilizando Hugo, un generador de sitios Web estáticos. Y es algo que me gusta, pero tal como lo configuré inicialmente tenía una cuestión que me resultaba incómoda. Básicamente me obligaba a publicar el sitio Web utilizando mi ordenador, puesto que necesitaba ejecutar hugo -D para generar los ficheros HTML, CSS, XML y tal.
+Una mejora que me parece obvia en este caso es que el sitio Web se genere utilizando un sistema de integración continua.">
+</head>
+<body class=not-ready data-menu=true>
+<header class=header>
+<p class=logo>
+<a class=site-name href=/>manumateos.dev</a><a class=btn-dark></a>
+</p>
+<script>let bodyClx=document.body.classList,btnDark=document.querySelector('.btn-dark'),sysDark=window.matchMedia('(prefers-color-scheme: dark)'),darkVal=localStorage.getItem('dark'),setDark=a=>{bodyClx[a?'add':'remove']('dark'),localStorage.setItem('dark',a?'yes':'no')};setDark(darkVal?darkVal==='yes':sysDark.matches),requestAnimationFrame(()=>bodyClx.remove('not-ready')),btnDark.addEventListener('click',()=>setDark(!bodyClx.contains('dark'))),sysDark.addEventListener('change',a=>setDark(a.matches))</script>
+<nav class=menu>
+<a href=/>home</a>
+<a href=/sobre-mi/>sobre mí</a>
+<a href=/links/>links</a>
+</nav>
+<nav class=social>
+<a class=twitter style=--url:url(./twitter.svg) href=https://twitter.com/manumateos target=_blank></a>
+<a class=github style=--url:url(./github.svg) href=https://github.com/macram target=_blank></a>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-title>
+<p>
+<time>Feb 11, 2022</time>
+</p>
+<h1>Generar sitio Web con Hugo desde GitHub Actions</h1>
+</header>
+<section class=post-content><p>Ya os conté que este sitio Web está generado utilizando <strong>Hugo</strong>, un generador de sitios Web estáticos. Y es algo que me gusta, pero <a href=https://www.manumateos.dev/posts/crear-primer-sitio-web-hugo/>tal como lo configuré inicialmente</a> tenía una cuestión que me resultaba incómoda. Básicamente me obligaba a publicar el sitio Web utilizando mi ordenador, puesto que necesitaba ejecutar <code>hugo -D</code> para generar los ficheros HTML, CSS, XML y tal.</p>
+<p>Una mejora que me parece obvia en este caso es que el sitio Web se genere utilizando un sistema de integración continua. Y, estando el sitio Web alojado en GitHub Pages, la opción obvia para llevar esto a cabo es usar GitHub Actions.</p>
+<p>No hay necesidad de reinventar la rueda. Arnab Kumar Shil <a href=https://ruddra.com/hugo-deploy-static-page-using-github-actions/>tiene un tutorial en su sitio Web</a> donde explica los pasos para configurar GitHub Actions, y proporciona el código para el fichero <code>main.yml</code> correspondiente al <em>workflow</em>.</p>
+<p>Eso sí, en mi caso he tenido que modificar algunas cuestiones. En este momento lo he dejado así:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>name</span>: <span style=color:#ae81ff>CI</span>
+<span style=color:#f92672>on</span>: <span style=color:#ae81ff>push</span>
+<span style=color:#f92672>jobs</span>:
+  <span style=color:#f92672>deploy</span>:
+    <span style=color:#f92672>runs-on</span>: <span style=color:#ae81ff>ubuntu-18.04</span>
+    <span style=color:#f92672>steps</span>:
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Git checkout</span>
+        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/checkout@v2</span>
+
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Update theme</span>
+        <span style=color:#75715e># (Optional)If you have the theme added as submodule, you can pull it and use the most updated version</span>
+        <span style=color:#f92672>run</span>: <span style=color:#ae81ff>git submodule update --init --recursive</span>
+
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Setup hugo</span>
+        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>peaceiris/actions-hugo@v2</span>
+        <span style=color:#f92672>with</span>:
+          <span style=color:#f92672>hugo-version</span>: <span style=color:#e6db74>&#34;0.92.2&#34;</span>
+
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Build</span>
+        <span style=color:#75715e># remove --minify tag if you do not need it</span>
+        <span style=color:#75715e># docs: https://gohugo.io/hugo-pipes/minification/</span>
+        <span style=color:#f92672>run</span>: <span style=color:#ae81ff>hugo --minify</span>
+
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Deploy</span>
+        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>peaceiris/actions-gh-pages@v3</span>
+        <span style=color:#f92672>with</span>:
+          <span style=color:#f92672>personal_token</span>: <span style=color:#ae81ff>${{ secrets.TOKEN }}</span>
+          <span style=color:#f92672>external_repository</span>: <span style=color:#ae81ff>(repo)</span>
+          <span style=color:#f92672>publish_dir</span>: <span style=color:#ae81ff>./public</span>
+          <span style=color:#75715e>#   keep_files: true</span>
+          <span style=color:#f92672>user_name</span>: <span style=color:#ae81ff>Manu Mateos</span>
+          <span style=color:#f92672>user_email</span>: <span style=color:#ae81ff>hola@manumateos.dev</span>
+          <span style=color:#f92672>publish_branch</span>: <span style=color:#ae81ff>main</span>
+          <span style=color:#f92672>cname</span>: <span style=color:#ae81ff>www.manumateos.dev</span>
+</code></pre></div><p>Lo primero que he modificado es la versión de Hugo. En el tutorial especifica una versión demasiado antigua, y el parámetro <code>--minify</code> requiere una versión posterior. La que he configurado es la 0.91.2, la última en el momento de escribir este artículo.</p>
+<p>Eso sí: esa configuración incluye que el <em>workflow</em> utilice un token de acceso personal de GitHub para autenticarse, y eso significa que ese <em>workflow</em> tiene acceso de lectura y escritura… a todos mis repositorios, públicos o privados. Y no me hace mucha gracia darle semejante acceso a un tercero que, si bien a priori no tiene por qué tener intenciones maliciosas, nada me garantiza que en un futuro no cambie de manos y decida curiosear más de la cuenta, o borrar lo que no deba.</p>
+<p>Estaré vigilante por si acaso, porque no se me ocurre otra forma de darle un acceso más limitado a esta acción. Podría usar una clave SSH para realizar la conexión, pero en realidad estaría en las mismas. En todo caso también pueden generarse <em>tokens</em> temporales e irlos renovando cada mes.</p>
+<p>En principio este artículo lo he escrito con el iPad y lo he publicado utilizando este método, así que si lo lee alguien es que se ha publicado bien y ha funcionado todo.</p>
+</section>
+<footer class=post-tags>
+<a href=/tags/hugo>Hugo</a>
+<a href=/tags/web>Web</a>
+</footer>
+<nav class=post-nav>
+<a class=next href=/posts/crear-primer-sitio-web-hugo/><span>Crear primer sitio Web con Hugo</span><span>→</span></a>
+</nav>
+</article>
+</main>
+<footer class=footer>
+<p>&copy; 2022 <a href=/>manumateos.dev</a></p>
+<p>Powered by <a href=https://gohugo.io/ rel=noopener target=_blank>Hugo️️</a>️</p>
+<p>
+<a href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Paper 5.1</a>
+</p>
+</footer>
+</body>
+</html>
