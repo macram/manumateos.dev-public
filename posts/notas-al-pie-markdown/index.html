@@ -1,0 +1,98 @@
+<!doctype html><html lang=es>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>Insertar notas al pie en Markdown - manumateos.dev</title>
+<meta name=description content="Escribiendo un artículo para otro sitio me he visto en la necesidad de insertar notas al pie. Como siempre, estaba escribiendo usando Markdown (habitualmente uso iA Writer), así que busqué si había una sintaxis para ello.
+Resulta que es algo que en el Markdown original no está definido. Pero sí que existe una sintaxis extendida de Markdown para añadir funcionalidades que no están en el lenguaje original.
+La de las notas al pie1 es sencilla.">
+<meta name=author content>
+<link rel="preload stylesheet" as=style href=/app.min.css>
+<link rel=preload as=image href=/theme.png>
+<link rel=preload as=image href=/twitter.svg>
+<link rel=preload as=image href=/github.svg>
+<link rel=icon href=/favicon.ico>
+<link rel=apple-touch-icon href=/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<meta property="og:title" content="Insertar notas al pie en Markdown">
+<meta property="og:description" content="Escribiendo un artículo para otro sitio me he visto en la necesidad de insertar notas al pie. Como siempre, estaba escribiendo usando Markdown (habitualmente uso iA Writer), así que busqué si había una sintaxis para ello.
+Resulta que es algo que en el Markdown original no está definido. Pero sí que existe una sintaxis extendida de Markdown para añadir funcionalidades que no están en el lenguaje original.
+La de las notas al pie1 es sencilla.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/posts/notas-al-pie-markdown/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2022-03-06T20:23:26+01:00">
+<meta property="article:modified_time" content="2022-03-06T20:23:26+01:00">
+<meta itemprop=name content="Insertar notas al pie en Markdown">
+<meta itemprop=description content="Escribiendo un artículo para otro sitio me he visto en la necesidad de insertar notas al pie. Como siempre, estaba escribiendo usando Markdown (habitualmente uso iA Writer), así que busqué si había una sintaxis para ello.
+Resulta que es algo que en el Markdown original no está definido. Pero sí que existe una sintaxis extendida de Markdown para añadir funcionalidades que no están en el lenguaje original.
+La de las notas al pie1 es sencilla."><meta itemprop=datePublished content="2022-03-06T20:23:26+01:00">
+<meta itemprop=dateModified content="2022-03-06T20:23:26+01:00">
+<meta itemprop=wordCount content="124">
+<meta itemprop=keywords content="Markdown,">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Insertar notas al pie en Markdown">
+<meta name=twitter:description content="Escribiendo un artículo para otro sitio me he visto en la necesidad de insertar notas al pie. Como siempre, estaba escribiendo usando Markdown (habitualmente uso iA Writer), así que busqué si había una sintaxis para ello.
+Resulta que es algo que en el Markdown original no está definido. Pero sí que existe una sintaxis extendida de Markdown para añadir funcionalidades que no están en el lenguaje original.
+La de las notas al pie1 es sencilla.">
+</head>
+<body class=not-ready data-menu=true>
+<header class=header>
+<p class=logo>
+<a class=site-name href=/>manumateos.dev</a><a class=btn-dark></a>
+</p>
+<script>let bodyClx=document.body.classList,btnDark=document.querySelector('.btn-dark'),sysDark=window.matchMedia('(prefers-color-scheme: dark)'),darkVal=localStorage.getItem('dark'),setDark=a=>{bodyClx[a?'add':'remove']('dark'),localStorage.setItem('dark',a?'yes':'no')};setDark(darkVal?darkVal==='yes':sysDark.matches),requestAnimationFrame(()=>bodyClx.remove('not-ready')),btnDark.addEventListener('click',()=>setDark(!bodyClx.contains('dark'))),sysDark.addEventListener('change',a=>setDark(a.matches))</script>
+<nav class=menu>
+<a href=/>home</a>
+<a href=/sobre-mi/>sobre mí</a>
+<a href=/links/>links</a>
+</nav>
+<nav class=social>
+<a class=twitter style=--url:url(./twitter.svg) href=https://twitter.com/manumateos target=_blank></a>
+<a class=github style=--url:url(./github.svg) href=https://github.com/macram target=_blank></a>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-title>
+<p>
+<time>Mar 6, 2022</time>
+</p>
+<h1>Insertar notas al pie en Markdown</h1>
+</header>
+<section class=post-content><p>Escribiendo un artículo para otro sitio me he visto en la necesidad de insertar notas al pie. Como siempre, estaba escribiendo usando Markdown (habitualmente uso iA Writer), así que busqué si había una sintaxis para ello.</p>
+<p>Resulta que es algo que en <a href=https://daringfireball.net/projects/markdown/syntax>el Markdown <em>original</em></a> no está definido. Pero sí que existe una <a href=https://www.markdownguide.org/extended-syntax/>sintaxis extendida de Markdown</a> para añadir funcionalidades que no están en el lenguaje original.</p>
+<p>La de las notas al pie<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> es sencilla. Hay varias opciones.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown>Texto[^ Nota al pie]
+</code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown>Texto [^1]
+
+[^1]: Nota al pie de varios párrafos.
+
+	Este es el segundo párrafo.
+</code></pre></div><p>Honestamente no estoy seguro de que el conversor Markdown → HTML que usa Hugo admita las notas al pie; este post es una buena forma de averiguarlo.</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p><a href=https://www.markdownguide.org/extended-syntax/#footnotes>Footnotes</a>.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</section>
+<footer class=post-tags>
+<a href=/tags/markdown>Markdown</a>
+</footer>
+<nav class=post-nav>
+<a class=next href=/posts/github-actions-hugo/><span>Generar sitio Web con Hugo desde GitHub Actions</span><span>→</span></a>
+</nav>
+</article>
+</main>
+<footer class=footer>
+<p>&copy; 2022 <a href=/>manumateos.dev</a></p>
+<p>Powered by <a href=https://gohugo.io/ rel=noopener target=_blank>Hugo️️</a>️</p>
+<p>
+<a href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Paper 5.1</a>
+</p>
+</footer>
+</body>
+</html>
