@@ -1,0 +1,79 @@
+<!doctype html><html lang=es>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title> - manumateos.dev</title>
+<meta name=description content="— title: “Un Apple TV no se enciende sin HDMI” date: 2022-04-27T22:33:26+01:00 draft: true tags: [“Apple TV”, “tvOS”, “iOS”] —
+Por una parte: sabéis que podéis ver desde vuestro Mac la pantalla de un Apple TV. Siempre[^ Siempre que los astros se alineen, que ya sabemos cómo funcionan a veces estas cosas.] que tengáis el Apple TV habilitado para desarrollo y en la misma red local veréis como origen de vídeo en una grabación de vídeo de Quicktime vuestro Apple TV, igual que veríais vuestra webcam o un iPhone conectado a través de cable USB.">
+<meta name=author content>
+<link rel="preload stylesheet" as=style href=/app.min.css>
+<link rel=preload as=image href=/theme.png>
+<link rel=preload as=image href=/twitter.svg>
+<link rel=preload as=image href=/github.svg>
+<link rel=icon href=/favicon.ico>
+<link rel=apple-touch-icon href=/apple-touch-icon.png>
+<meta name=generator content="Hugo 0.92.2">
+<meta property="og:title" content>
+<meta property="og:description" content="— title: “Un Apple TV no se enciende sin HDMI” date: 2022-04-27T22:33:26+01:00 draft: true tags: [“Apple TV”, “tvOS”, “iOS”] —
+Por una parte: sabéis que podéis ver desde vuestro Mac la pantalla de un Apple TV. Siempre[^ Siempre que los astros se alineen, que ya sabemos cómo funcionan a veces estas cosas.] que tengáis el Apple TV habilitado para desarrollo y en la misma red local veréis como origen de vídeo en una grabación de vídeo de Quicktime vuestro Apple TV, igual que veríais vuestra webcam o un iPhone conectado a través de cable USB.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/posts/apple-tv-does-not-turn-on/"><meta property="article:section" content="posts">
+<meta itemprop=name content>
+<meta itemprop=description content="— title: “Un Apple TV no se enciende sin HDMI” date: 2022-04-27T22:33:26+01:00 draft: true tags: [“Apple TV”, “tvOS”, “iOS”] —
+Por una parte: sabéis que podéis ver desde vuestro Mac la pantalla de un Apple TV. Siempre[^ Siempre que los astros se alineen, que ya sabemos cómo funcionan a veces estas cosas.] que tengáis el Apple TV habilitado para desarrollo y en la misma red local veréis como origen de vídeo en una grabación de vídeo de Quicktime vuestro Apple TV, igual que veríais vuestra webcam o un iPhone conectado a través de cable USB.">
+<meta itemprop=wordCount content="288">
+<meta itemprop=keywords content>
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content>
+<meta name=twitter:description content="— title: “Un Apple TV no se enciende sin HDMI” date: 2022-04-27T22:33:26+01:00 draft: true tags: [“Apple TV”, “tvOS”, “iOS”] —
+Por una parte: sabéis que podéis ver desde vuestro Mac la pantalla de un Apple TV. Siempre[^ Siempre que los astros se alineen, que ya sabemos cómo funcionan a veces estas cosas.] que tengáis el Apple TV habilitado para desarrollo y en la misma red local veréis como origen de vídeo en una grabación de vídeo de Quicktime vuestro Apple TV, igual que veríais vuestra webcam o un iPhone conectado a través de cable USB.">
+</head>
+<body class=not-ready data-menu=true>
+<header class=header>
+<p class=logo>
+<a class=site-name href=/>manumateos.dev</a><a class=btn-dark></a>
+</p>
+<script>let bodyClx=document.body.classList,btnDark=document.querySelector('.btn-dark'),sysDark=window.matchMedia('(prefers-color-scheme: dark)'),darkVal=localStorage.getItem('dark'),setDark=a=>{bodyClx[a?'add':'remove']('dark'),localStorage.setItem('dark',a?'yes':'no')};setDark(darkVal?darkVal==='yes':sysDark.matches),requestAnimationFrame(()=>bodyClx.remove('not-ready')),btnDark.addEventListener('click',()=>setDark(!bodyClx.contains('dark'))),sysDark.addEventListener('change',a=>setDark(a.matches))</script>
+<nav class=menu>
+<a href=/>home</a>
+<a href=/sobre-mi/>sobre mí</a>
+<a href=/links/>links</a>
+</nav>
+<nav class=social>
+<a class=twitter style=--url:url(./twitter.svg) href=https://twitter.com/manumateos target=_blank></a>
+<a class=github style=--url:url(./github.svg) href=https://github.com/macram target=_blank></a>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-title>
+<p>
+</p>
+<h1></h1>
+</header>
+<section class=post-content><p>—
+title: “Un Apple TV no se enciende sin HDMI”
+date: 2022-04-27T22:33:26+01:00
+draft: true
+tags: [“Apple TV”, “tvOS”, “iOS”]
+—</p>
+<p>Por una parte: sabéis que podéis ver desde vuestro Mac la pantalla de un Apple TV. Siempre[^ Siempre que los astros se alineen, que ya sabemos cómo funcionan a veces estas cosas.] que tengáis el Apple TV habilitado para desarrollo y en la misma red local veréis como origen de vídeo en una grabación de vídeo de Quicktime vuestro Apple TV, igual que veríais vuestra webcam o un iPhone conectado a través de cable USB. Hay algunas cosas que no seréis capaces de proyectar, como por ejemplo el vídeo con DRM. Esto es lógico, esperable y por diseño, no es un bug.</p>
+<p>Por cuestiones de cómo dispongo los elementos de mi espacio de trabajo, a veces tengo conectado mi Apple TV a una pantalla externa y a veces no. Pues otra mañana, buscando evitar cambiar cables, pensé que a lo mejor podría dejar el Apple TV desconectado de la tele de la oficina, y acceder a él desde el Mac usando QuickTime.</p>
+<p>Nada más lejos de la realidad. Pero resulta que el Apple TV está programado para no encenderse si no está conectado a una pantalla. Tiene cierto sentido: no es un dispositivo pensado para ejecutarse de forma <em>headless</em>.</p>
+<p>La solución pasa por conectar algo al puerto HDMI que haga pensar al Apple TV que hay una pantalla al otro lado. Y eso se llama <em><strong>HDMI dummy plug</strong></em> (buscad en Amazon o en AliExpress o en vuestro proveedor de electrónica barata de confianza). También se usan en ciertas tarjetas gráficas que se capan para que no funcionen sin pantalla, buscando evitar así que se usen para minar criptomonedas.</p>
+</section>
+<nav class=post-nav>
+<a class=prev href=/posts/ciclo-de-vida-de-los-uiviewcontrollers/><span>←</span><span>Ciclo de vida de los UIViewControllers</span></a>
+</nav>
+</article>
+</main>
+<footer class=footer>
+<p>&copy; 2022 <a href=/>manumateos.dev</a></p>
+<p>Powered by <a href=https://gohugo.io/ rel=noopener target=_blank>Hugo️️</a>️</p>
+<p>
+<a href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Paper 5.1</a>
+</p>
+</footer>
+</body>
+</html>
