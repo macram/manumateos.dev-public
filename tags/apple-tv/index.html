@@ -1,12 +1,13 @@
-<!doctype html><html lang=es>
+<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#faf6f1 lang=es>
 <head>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <title>Apple TV - manumateos.dev</title>
-<meta name=description content>
-<meta name=author content>
-<link rel="preload stylesheet" as=style href=/app.min.css>
+<meta name=theme-color>
+<meta name=description content="A personal blog">
+<meta name=author content="manumateos.dev">
+<link rel="preload stylesheet" as=style href=/main.min.css>
 <link rel=preload as=image href=/theme.png>
 <link rel=preload as=image href=/twitter.svg>
 <link rel=preload as=image href=/github.svg>
@@ -24,41 +25,50 @@
 <meta name=twitter:title content="Apple TV">
 <meta name=twitter:description content>
 </head>
-<body class=not-ready data-menu=true>
-<header class=header>
-<p class=logo>
-<a class=site-name href=/>manumateos.dev</a><a class=btn-dark></a>
-</p>
-<script>let bodyClx=document.body.classList,btnDark=document.querySelector('.btn-dark'),sysDark=window.matchMedia('(prefers-color-scheme: dark)'),darkVal=localStorage.getItem('dark'),setDark=a=>{bodyClx[a?'add':'remove']('dark'),localStorage.setItem('dark',a?'yes':'no')};setDark(darkVal?darkVal==='yes':sysDark.matches),requestAnimationFrame(()=>bodyClx.remove('not-ready')),btnDark.addEventListener('click',()=>setDark(!bodyClx.contains('dark'))),sysDark.addEventListener('change',a=>setDark(a.matches))</script>
-<nav class=menu>
-<a href=/>home</a>
-<a href=/sobre-mi/>sobre mí</a>
-<a href=/links/>links</a>
+<body class="text-black duration-200 ease-out dark:text-white">
+<header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+<div class="relative z-50 mr-auto flex items-center">
+<a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href=/>manumateos.dev</a>
+<div class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]" role=button aria-label=Dark></div>
+</div>
+<div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div>
+<script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove('not-ready')},10);const btnMenu=document.querySelector('.btn-menu');btnMenu.addEventListener('click',()=>{htmlClass.toggle('open')});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#faf6f1"`.replace(/"/g,''),setDark=a=>{metaTheme.setAttribute('content',a?'#000':lightBg),htmlClass[a?'add':'remove']('dark'),localStorage.setItem('dark',a)},darkScheme=window.matchMedia('(prefers-color-scheme: dark)');if(htmlClass.contains('dark'))setDark(!0);else{const a=localStorage.getItem('dark');setDark(a?a==='true':darkScheme.matches)}darkScheme.addEventListener('change',a=>{setDark(a.matches)});const btnDark=document.querySelector('.btn-dark');btnDark.addEventListener('click',()=>{setDark(localStorage.getItem('dark')!=='true')})</script>
+<div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
+<nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/>home</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/sobre-mi/>sobre mí</a>
+<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/links/>links</a>
 </nav>
-<nav class=social>
-<a class=twitter style=--url:url(./twitter.svg) href=https://twitter.com/manumateos target=_blank></a>
-<a class=github style=--url:url(./github.svg) href=https://github.com/macram target=_blank></a>
+<nav class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6">
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/manumateos target=_blank rel=me>
+twitter
+</a>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/macram target=_blank rel=me>
+github
+</a>
 </nav>
+</div>
 </header>
-<main class=main>
-<h1 class=main-title>Apple TV</h1>
-<article class=post-entry>
-<h2>Permitir el uso de la tecla Menú/Back en un UIAlertController</h2>
-<time>May 26, 2022</time>
-<a href=/posts/allow-menu-key-on-uialertcontroller/></a>
-</article>
-<article class=post-entry>
-<h2>Un Apple TV no se enciende sin HDMI</h2>
-<time>Apr 27, 2022</time>
-<a href=/posts/apple-tv-does-not-turn-on/></a>
-</article>
+<main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
+<h1 class=mb-24>Apple TV</h1>
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+<h2 class="!my-0 pb-1 !leading-none">Permitir el uso de la tecla Menú/Back en un UIAlertController</h2>
+<time class="text-sm opacity-50">May 26, 2022</time>
+<a class="absolute inset-0 text-[0]" href=/posts/allow-menu-key-on-uialertcontroller/>Permitir el uso de la tecla Menú/Back en un UIAlertController</a>
+</section>
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+<h2 class="!my-0 pb-1 !leading-none">Un Apple TV no se enciende sin HDMI</h2>
+<time class="text-sm opacity-50">Apr 27, 2022</time>
+<a class="absolute inset-0 text-[0]" href=/posts/apple-tv-does-not-turn-on/>Un Apple TV no se enciende sin HDMI</a>
+</section>
 </main>
-<footer class=footer>
-<p>&copy; 2023 <a href=/>manumateos.dev</a></p>
-<p>Powered by <a href=https://gohugo.io/ rel=noopener target=_blank>Hugo️️</a>️</p>
-<p>
-<a href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Paper 5.1</a>
-</p>
+<footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-50">
+<div class=mr-auto>
+&copy; 2023
+<a class=link href=/>manumateos.dev</a>
+</div>
+<a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>Powered by Hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>Theme Paper</a>
 </footer>
 </body>
 </html>
