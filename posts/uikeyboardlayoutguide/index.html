@@ -25,7 +25,7 @@ Lo que hace años suponía estar escuchando a una notificación y recolocar vist
 <meta itemprop=description content="En iOS 15 se introdujo una nueva forma de hacer que nuestras aplicaciones respondan a eventos tan comunes como la aparición o desaparición de un teclado (y también a los teclados flotantes que pueden ocurrir en iPadOS). Se trata del nuevo atributo keyboardLayoutGuide que forma parte de UIView.
 Lo que hace años suponía estar escuchando a una notificación y recolocar vistas (activando o desactivando constraints o, peor, modificando a mano el frame de ciertos elementos que puedan estar afectados) ahora se reduce a crear una nueva constraint que se coloque en uno de los anclas de esta layout guide, generalmente el topAnchor."><meta itemprop=datePublished content="2022-12-21T16:32:35+01:00">
 <meta itemprop=dateModified content="2022-12-21T16:32:35+01:00">
-<meta itemprop=wordCount content="162">
+<meta itemprop=wordCount content="196">
 <meta itemprop=keywords content="iOS,UIKit,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="UIKeyboardLayoutGuide">
@@ -62,6 +62,8 @@ Lo que hace años suponía estar escuchando a una notificación y recolocar vist
 <pre tabindex=0><code class=language-swift5 data-lang=swift5>let constraint = self.scrollView.bottomAnchor.constraint(equalTo: self.view.keyboardLayoutGuide.topAnchor)
 constraint.isActive = true
 </code></pre><p>El uso básico es este. Luego ya es posible añadir otros usos más interesantes, como por ejemplo para colocar una barra de herramientas adosada al teclado y que le persiga. Esto lo desarrollaré en el futuro.</p>
+<p><strong>Update</strong>: en Xcode 13 se introdujo un checkbox en el Interface Builder que permite habilitar el Keyboard Layout Guide como una guía más, y configurar nuestras <em>constraints</em> como veníamos haciendo con el <em>safe area</em>.</p>
+<p><img src=/images/keyboard-layout-guide.png alt="Keyboard layout guide en Interface Builder"></p>
 </section>
 <footer class=post-tags>
 <a href=/tags/ios>iOS</a>
