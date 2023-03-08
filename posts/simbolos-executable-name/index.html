@@ -55,30 +55,30 @@ twitter
 <a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/macram target=_blank rel=me>
 github
 </a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./mastodon.svg) href=@manu@paquita.masto.host target=_blank rel=me>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./mastodon.svg) href=https://paquita.masto.host/@manu target=_blank rel=me>
 mastodon
 </a>
 </nav>
 </div>
 </header>
 <main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
-<article class=post-single>
-<header class=post-title>
-<p>
+<article>
+<header class=mb-20>
+<h1 class="!my-0 pb-2.5">Símbolos en el Executable name</h1>
+<div class="text-sm opacity-50">
 <time>Dec 7, 2021</time>
-</p>
-<h1>Símbolos en el Executable name</h1>
+</div>
 </header>
-<section class=post-content><p>Cuando se cambia el nombre mostrado a una app de iOS, si éste tiene símbolos (p.ej Movistar+), es mejor hacerlo directamente en la clave “Bundle display name” del Info.plist, para evitar que la App Store rechace la build.</p>
+<section><p>Cuando se cambia el nombre mostrado a una app de iOS, si éste tiene símbolos (p.ej Movistar+), es mejor hacerlo directamente en la clave “Bundle display name” del Info.plist, para evitar que la App Store rechace la build.</p>
 <p>En el “<em>Executable name</em>” no debe haber símbolos. Y <a href=https://developer.apple.com/library/archive/documentation/DeveloperTools/Reference/XcodeBuildSettingRef/1-Build_Setting_Reference/build_setting_ref.html#//apple_ref/doc/uid/TP40003931-CH3-SW71>este se genera concatenando varios valores</a>; <code>$EXECUTABLE_PREFIX$PRODUCT_NAME$EXECUTABLE_SUFFIX</code>. Si cambias el valor directamente en el proyecto, se establece esa variable, y al generar la build (o al subirse a TestFlight) dará error.</p>
 </section>
-<footer class=post-tags>
-<a href=/tags/app-store>App Store</a>
-<a href=/tags/ios>iOS</a>
+<footer class="mt-12 flex flex-wrap">
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=/tags/app-store>App Store</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=/tags/ios>iOS</a>
 </footer>
-<nav class=post-nav>
-<a class=prev href=/posts/screenshot-from-video/><span>←</span><span>Obtener capturas de pantalla de un vídeo</span></a>
-<a class=next href=/posts/hg-strip/><span>hg strip</span><span>→</span></a>
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=/posts/screenshot-from-video/><span class=mr-1.5>←</span><span>Obtener capturas de pantalla de un vídeo</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=/posts/hg-strip/><span>hg strip</span><span class=ml-1.5>→</span></a>
 </nav>
 </article>
 </main>

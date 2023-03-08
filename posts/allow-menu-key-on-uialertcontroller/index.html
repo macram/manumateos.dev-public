@@ -55,21 +55,21 @@ twitter
 <a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/macram target=_blank rel=me>
 github
 </a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./mastodon.svg) href=@manu@paquita.masto.host target=_blank rel=me>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./mastodon.svg) href=https://paquita.masto.host/@manu target=_blank rel=me>
 mastodon
 </a>
 </nav>
 </div>
 </header>
 <main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
-<article class=post-single>
-<header class=post-title>
-<p>
+<article>
+<header class=mb-20>
+<h1 class="!my-0 pb-2.5">Permitir el uso de la tecla Menú/Back en un UIAlertController</h1>
+<div class="text-sm opacity-50">
 <time>May 26, 2022</time>
-</p>
-<h1>Permitir el uso de la tecla Menú/Back en un UIAlertController</h1>
+</div>
 </header>
-<section class=post-content><p>Un <code>UIAlertController</code> es quizá el modo más sencillo, lógico y normal de mostrar un modal en una aplicación de tvOS. Es nativo del sistema, permite colocar acciones… Es hasta razonablemente bonito.</p>
+<section><p>Un <code>UIAlertController</code> es quizá el modo más sencillo, lógico y normal de mostrar un modal en una aplicación de tvOS. Es nativo del sistema, permite colocar acciones… Es hasta razonablemente bonito.</p>
 <p>Y si bien es sencillo tener un <code>UIAlertController</code> con varios botones como el de la imagen inferior, hay casos en los que podemos querer uno que sea meramente informativo o con un mensaje de “Cargando” (este caso es especialmente frecuente en apps de tvOS).</p>
 <p><img src=/images/alertcontroller-with-buttons.png alt="UIAlertController con botones en tvOS"></p>
 <p>Y el problema es que un UIAlertController por defecto es <strong>modal</strong>. Es decir, está diseñado para no permitir al usuario descartarlo por un sitio que no esté expresamente definido (en este caso por las acciones que le podamos añadir al construirlo).</p>
@@ -81,14 +81,14 @@ mastodon
 alertController.addAction(cancelAction)
 </code></pre><p>(El contenido de la clausura o del handler puede ser el que esperéis, o incluso puede no haber ningún tipo de manejador, dado que en este momento no es obligatorio; esto ya como os lo planteéis vosotros).</p>
 </section>
-<footer class=post-tags>
-<a href=/tags/apple-tv>Apple TV</a>
-<a href=/tags/tvos>tvOS</a>
-<a href=/tags/ios>iOS</a>
+<footer class="mt-12 flex flex-wrap">
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=/tags/apple-tv>Apple TV</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=/tags/tvos>tvOS</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=/tags/ios>iOS</a>
 </footer>
-<nav class=post-nav>
-<a class=prev href=/posts/remove-dsstore-files/><span>←</span><span>Eliminar ficheros .DS_Store de un plumazo</span></a>
-<a class=next href=/posts/apple-tv-does-not-turn-on/><span>Un Apple TV no se enciende sin HDMI</span><span>→</span></a>
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=/posts/remove-dsstore-files/><span class=mr-1.5>←</span><span>Eliminar ficheros .DS_Store de un plumazo</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=/posts/apple-tv-does-not-turn-on/><span>Un Apple TV no se enciende sin HDMI</span><span class=ml-1.5>→</span></a>
 </nav>
 </article>
 </main>

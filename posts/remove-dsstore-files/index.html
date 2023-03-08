@@ -59,33 +59,33 @@ twitter
 <a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/macram target=_blank rel=me>
 github
 </a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./mastodon.svg) href=@manu@paquita.masto.host target=_blank rel=me>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./mastodon.svg) href=https://paquita.masto.host/@manu target=_blank rel=me>
 mastodon
 </a>
 </nav>
 </div>
 </header>
 <main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
-<article class=post-single>
-<header class=post-title>
-<p>
+<article>
+<header class=mb-20>
+<h1 class="!my-0 pb-2.5">Eliminar ficheros .DS_Store de un plumazo</h1>
+<div class="text-sm opacity-50">
 <time>Dec 5, 2022</time>
-</p>
-<h1>Eliminar ficheros .DS_Store de un plumazo</h1>
+</div>
 </header>
-<section class=post-content><p>Hay una forma muy sencilla de eliminar de un plumazo del repositorio todos los ficheros <code>.DS_Store</code>, tan molestos y que incluso están prohibidos en algunos de los repositorios.</p>
+<section><p>Hay una forma muy sencilla de eliminar de un plumazo del repositorio todos los ficheros <code>.DS_Store</code>, tan molestos y que incluso están prohibidos en algunos de los repositorios.</p>
 <pre tabindex=0><code>find . -name '.DS_Store' -type f -delete`
 </code></pre><p>En principio también es posible deshabilitar la creación de estos ficheros. Basta ejecutar el comando siguiente y reiniciar el Mac.</p>
 <pre tabindex=0><code>defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 </code></pre><p>Estos archivos contienen metainformación sobre las carpetas, como la posición y configuración de los iconos; puede resultar útil a algunos usuarios. Cada uno debe valorar si le sirve o no.</p>
 </section>
-<footer class=post-tags>
-<a href=/tags/macos>macOS</a>
-<a href=/tags/terminal>Terminal</a>
+<footer class="mt-12 flex flex-wrap">
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=/tags/macos>macOS</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=/tags/terminal>Terminal</a>
 </footer>
-<nav class=post-nav>
-<a class=prev href=/posts/uikeyboardlayoutguide/><span>←</span><span>UIKeyboardLayoutGuide</span></a>
-<a class=next href=/posts/allow-menu-key-on-uialertcontroller/><span>Permitir el uso de la tecla Menú/Back en un UIAlertController</span><span>→</span></a>
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=/posts/uikeyboardlayoutguide/><span class=mr-1.5>←</span><span>UIKeyboardLayoutGuide</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=/posts/allow-menu-key-on-uialertcontroller/><span>Permitir el uso de la tecla Menú/Back en un UIAlertController</span><span class=ml-1.5>→</span></a>
 </nav>
 </article>
 </main>

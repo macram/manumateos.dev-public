@@ -63,21 +63,21 @@ twitter
 <a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/macram target=_blank rel=me>
 github
 </a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./mastodon.svg) href=@manu@paquita.masto.host target=_blank rel=me>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./mastodon.svg) href=https://paquita.masto.host/@manu target=_blank rel=me>
 mastodon
 </a>
 </nav>
 </div>
 </header>
 <main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
-<article class=post-single>
-<header class=post-title>
-<p>
+<article>
+<header class=mb-20>
+<h1 class="!my-0 pb-2.5">UIView.userInteractionEnabled</h1>
+<div class="text-sm opacity-50">
 <time>Dec 7, 2021</time>
-</p>
-<h1>UIView.userInteractionEnabled</h1>
+</div>
 </header>
-<section class=post-content><p>El parámetro <code>userInteractionEnabled</code> se propaga a todas las subviews. Es decir, si aplicamos a un UIView este parámetro, ninguna de sus subvistas responderán a interacciones por parte del usuario.</p>
+<section><p>El parámetro <code>userInteractionEnabled</code> se propaga a todas las subviews. Es decir, si aplicamos a un UIView este parámetro, ninguna de sus subvistas responderán a interacciones por parte del usuario.</p>
 <p><a href=https://stackoverflow.com/questions/10880868/on-ios-if-a-superviews-userinteractionenabled-is-no-then-all-subviews-are-dis>On iOS, if a superview&rsquo;s userInteractionEnabled is NO, then all subviews are disabled as well?</a></p>
 <p>Tampoco funciona si creas una subclase de <code>UIView</code> y sobrescribimos el método tal que así.</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=color:#66d9ef>override</span> <span style=color:#66d9ef>func</span> <span style=color:#a6e22e>point</span>(inside point: CGPoint, with event: UIEvent?) -&gt; Bool {
@@ -92,13 +92,13 @@ mastodon
 		<span style=color:#75715e>// Do our shit</span>
 }
 </code></pre></div></section>
-<footer class=post-tags>
-<a href=/tags/uikit>UIKit</a>
-<a href=/tags/ios>iOS</a>
+<footer class="mt-12 flex flex-wrap">
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=/tags/uikit>UIKit</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=/tags/ios>iOS</a>
 </footer>
-<nav class=post-nav>
-<a class=prev href=/posts/crear-primer-sitio-web-hugo/><span>←</span><span>Crear primer sitio Web con Hugo</span></a>
-<a class=next href=/posts/uibutton-tintcolor/><span>UIButton.tintColor</span><span>→</span></a>
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=/posts/crear-primer-sitio-web-hugo/><span class=mr-1.5>←</span><span>Crear primer sitio Web con Hugo</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=/posts/uibutton-tintcolor/><span>UIButton.tintColor</span><span class=ml-1.5>→</span></a>
 </nav>
 </article>
 </main>

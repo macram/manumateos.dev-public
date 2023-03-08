@@ -55,21 +55,21 @@ twitter
 <a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/macram target=_blank rel=me>
 github
 </a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./mastodon.svg) href=@manu@paquita.masto.host target=_blank rel=me>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./mastodon.svg) href=https://paquita.masto.host/@manu target=_blank rel=me>
 mastodon
 </a>
 </nav>
 </div>
 </header>
 <main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
-<article class=post-single>
-<header class=post-title>
-<p>
+<article>
+<header class=mb-20>
+<h1 class="!my-0 pb-2.5">Generar sitio Web con Hugo desde GitHub Actions</h1>
+<div class="text-sm opacity-50">
 <time>Feb 11, 2022</time>
-</p>
-<h1>Generar sitio Web con Hugo desde GitHub Actions</h1>
+</div>
 </header>
-<section class=post-content><p>Ya os conté que este sitio Web está generado utilizando <strong>Hugo</strong>, un generador de sitios Web estáticos. Y es algo que me gusta, pero <a href=https://www.manumateos.dev/posts/crear-primer-sitio-web-hugo/>tal como lo configuré inicialmente</a> tenía una cuestión que me resultaba incómoda. Básicamente me obligaba a publicar el sitio Web utilizando mi ordenador, puesto que necesitaba ejecutar <code>hugo -D</code> para generar los ficheros HTML, CSS, XML y tal.</p>
+<section><p>Ya os conté que este sitio Web está generado utilizando <strong>Hugo</strong>, un generador de sitios Web estáticos. Y es algo que me gusta, pero <a href=https://www.manumateos.dev/posts/crear-primer-sitio-web-hugo/>tal como lo configuré inicialmente</a> tenía una cuestión que me resultaba incómoda. Básicamente me obligaba a publicar el sitio Web utilizando mi ordenador, puesto que necesitaba ejecutar <code>hugo -D</code> para generar los ficheros HTML, CSS, XML y tal.</p>
 <p>Una mejora que me parece obvia en este caso es que el sitio Web se genere utilizando un sistema de integración continua. Y, estando el sitio Web alojado en GitHub Pages, la opción obvia para llevar esto a cabo es usar GitHub Actions.</p>
 <p>No hay necesidad de reinventar la rueda. Arnab Kumar Shil <a href=https://ruddra.com/hugo-deploy-static-page-using-github-actions/>tiene un tutorial en su sitio Web</a> donde explica los pasos para configurar GitHub Actions, y proporciona el código para el fichero <code>main.yml</code> correspondiente al <em>workflow</em>.</p>
 <p>Eso sí, en mi caso he tenido que modificar algunas cuestiones. En este momento lo he dejado así:</p>
@@ -112,13 +112,13 @@ mastodon
 <p>Estaré vigilante por si acaso, porque no se me ocurre otra forma de darle un acceso más limitado a esta acción. Podría usar una clave SSH para realizar la conexión, pero en realidad estaría en las mismas. En todo caso también pueden generarse <em>tokens</em> temporales e irlos renovando cada mes.</p>
 <p>En principio este artículo lo he escrito con el iPad y lo he publicado utilizando este método, así que si lo lee alguien es que se ha publicado bien y ha funcionado todo.</p>
 </section>
-<footer class=post-tags>
-<a href=/tags/hugo>Hugo</a>
-<a href=/tags/web>Web</a>
+<footer class="mt-12 flex flex-wrap">
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=/tags/hugo>Hugo</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=/tags/web>Web</a>
 </footer>
-<nav class=post-nav>
-<a class=prev href=/posts/notas-al-pie-markdown/><span>←</span><span>Insertar notas al pie en Markdown</span></a>
-<a class=next href=/posts/crear-primer-sitio-web-hugo/><span>Crear primer sitio Web con Hugo</span><span>→</span></a>
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=/posts/notas-al-pie-markdown/><span class=mr-1.5>←</span><span>Insertar notas al pie en Markdown</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=/posts/crear-primer-sitio-web-hugo/><span>Crear primer sitio Web con Hugo</span><span class=ml-1.5>→</span></a>
 </nav>
 </article>
 </main>

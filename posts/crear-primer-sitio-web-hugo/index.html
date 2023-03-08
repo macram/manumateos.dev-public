@@ -51,21 +51,21 @@ twitter
 <a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/macram target=_blank rel=me>
 github
 </a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./mastodon.svg) href=@manu@paquita.masto.host target=_blank rel=me>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./mastodon.svg) href=https://paquita.masto.host/@manu target=_blank rel=me>
 mastodon
 </a>
 </nav>
 </div>
 </header>
 <main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
-<article class=post-single>
-<header class=post-title>
-<p>
+<article>
+<header class=mb-20>
+<h1 class="!my-0 pb-2.5">Crear primer sitio Web con Hugo</h1>
+<div class="text-sm opacity-50">
 <time>Dec 7, 2021</time>
-</p>
-<h1>Crear primer sitio Web con Hugo</h1>
+</div>
 </header>
-<section class=post-content><p>Llevaba tiempo queriendo escribir una bitácora de desarrollo donde poner las notas que voy recopilando mientras voy desarrollando. Y he intentado varias cosas: poner una página pública en Notion (herramienta que no he conseguido acostumbrarme a usar) o incluso montar otro sitio Web con <a href=https://wordpress.org>WordPress</a>. Pero en realidad buscaba una herramienta bastante más sencilla, algo que me permitiera escribir en Markdown y publicar un sitio Web, sin más. WordPress en este caso era matar moscas a cañonazos.</p>
+<section><p>Llevaba tiempo queriendo escribir una bitácora de desarrollo donde poner las notas que voy recopilando mientras voy desarrollando. Y he intentado varias cosas: poner una página pública en Notion (herramienta que no he conseguido acostumbrarme a usar) o incluso montar otro sitio Web con <a href=https://wordpress.org>WordPress</a>. Pero en realidad buscaba una herramienta bastante más sencilla, algo que me permitiera escribir en Markdown y publicar un sitio Web, sin más. WordPress en este caso era matar moscas a cañonazos.</p>
 <p>Y llevaba tiempo con ganas de probar un generador de sitios Web estático. Hace tiempo intenté trastear con <a href=https://jekyllrb.com>Jekyll</a> y la verdad es que no lo conseguí funcionar; tampoco le dediqué mucho esfuerzo. Hoy tenía un rato libre y ganas de enredar, y terminé instalándome <a href=https://gohugo.io>Hugo</a>, que hace años me lo comentó un compañero de trabajo. Y ha terminado ajustándose bastante bien a lo que buscaba.</p>
 <p>No requiere demasiada configuración y por defecto ya me permite escribir posts. El tema que he elegido es bastante sencillo y sobrio, y creo que se lee bien. Se llama <a href=https://github.com/nanxiaobei/hugo-paper>Paper</a>. Tiene modo claro y modo oscuro y… ya. Tampoco necesito más.</p>
 <p>Os dejo unas notas de cómo he instalado y configurado este sitio Web.</p>
@@ -104,13 +104,13 @@ mastodon
 <li>Hacer commit y push del submódulo privado (si he tocado la configuración o modificado el tema).</li>
 </ol>
 </section>
-<footer class=post-tags>
-<a href=/tags/hugo>Hugo</a>
-<a href=/tags/web>Web</a>
+<footer class="mt-12 flex flex-wrap">
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=/tags/hugo>Hugo</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=/tags/web>Web</a>
 </footer>
-<nav class=post-nav>
-<a class=prev href=/posts/github-actions-hugo/><span>←</span><span>Generar sitio Web con Hugo desde GitHub Actions</span></a>
-<a class=next href=/posts/userinteractionenabled/><span>UIView.userInteractionEnabled</span><span>→</span></a>
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=/posts/github-actions-hugo/><span class=mr-1.5>←</span><span>Generar sitio Web con Hugo desde GitHub Actions</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=/posts/userinteractionenabled/><span>UIView.userInteractionEnabled</span><span class=ml-1.5>→</span></a>
 </nav>
 </article>
 </main>

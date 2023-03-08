@@ -55,21 +55,21 @@ twitter
 <a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/macram target=_blank rel=me>
 github
 </a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./mastodon.svg) href=@manu@paquita.masto.host target=_blank rel=me>
+<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./mastodon.svg) href=https://paquita.masto.host/@manu target=_blank rel=me>
 mastodon
 </a>
 </nav>
 </div>
 </header>
 <main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
-<article class=post-single>
-<header class=post-title>
-<p>
+<article>
+<header class=mb-20>
+<h1 class="!my-0 pb-2.5">Obtener capturas de pantalla de un vídeo</h1>
+<div class="text-sm opacity-50">
 <time>Dec 7, 2021</time>
-</p>
-<h1>Obtener capturas de pantalla de un vídeo</h1>
+</div>
 </header>
-<section class=post-content><p>La funcionalidad que estoy intentando implementar implica una cuestión muy concreta: necesito mostrar miniaturas de momentos aleatorios de un vídeo en streaming HLS. El ejemplo es el reproductor de YouTube: cuando se arrastra la barra atrás o adelante, se muestra una miniatura para indicar qué parte del vídeo es la afectada.</p>
+<section><p>La funcionalidad que estoy intentando implementar implica una cuestión muy concreta: necesito mostrar miniaturas de momentos aleatorios de un vídeo en streaming HLS. El ejemplo es el reproductor de YouTube: cuando se arrastra la barra atrás o adelante, se muestra una miniatura para indicar qué parte del vídeo es la afectada.</p>
 <p>El método recomendado, en principio, es <strong>tener un AVPlayer con el rate establecido a 0</strong>, de manera que el propio AVPlayer se encargue de llevar el vídeo a esos momentos, pararlo y mostrar la imagen en la pantalla. Ese player ya puede estar incrustado en cualquier AVPlayerViewController (y la view de este controller, como una subview de cualquier otra vista), sin ningún problema.</p>
 <p><a href=https://stackoverflow.com/questions/54617558/failed-to-get-video-thumbnail-from-avplayer-using-fairplay-hls>Failed to get video thumbnail from AVPlayer using Fairplay HLS</a></p>
 <h2 id=avassetimagegenerator>AVAssetImageGenerator</h2>
@@ -78,13 +78,13 @@ mastodon
 <p>Además, tendría una penalización de rendimiento bastante fuerte (el método funciona de manera síncrona; para este caso habría que generar determinadas capturas en segundo plano y cachearlas de alguna manera).</p>
 <p>Este método podría servir para tener marcas de capítulos, pero para ir generando capturas en vivo, que es el caso que necesito resolver. Habría otro método específico que podría servir todavía mejor: <code>[generateCGImagesAsynchronously(forTimes:completionHandler:)](https://developer.apple.com/documentation/avfoundation/avassetimagegenerator/1388100-generatecgimagesasynchronously)</code>.</p>
 </section>
-<footer class=post-tags>
-<a href=/tags/avkit>AVKit</a>
-<a href=/tags/ios>iOS</a>
+<footer class="mt-12 flex flex-wrap">
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=/tags/avkit>AVKit</a>
+<a class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]" href=/tags/ios>iOS</a>
 </footer>
-<nav class=post-nav>
-<a class=prev href=/posts/uibutton-tintcolor/><span>←</span><span>UIButton.tintColor</span></a>
-<a class=next href=/posts/simbolos-executable-name/><span>Símbolos en el Executable name</span><span>→</span></a>
+<nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+<a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=/posts/uibutton-tintcolor/><span class=mr-1.5>←</span><span>UIButton.tintColor</span></a>
+<a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]" href=/posts/simbolos-executable-name/><span>Símbolos en el Executable name</span><span class=ml-1.5>→</span></a>
 </nav>
 </article>
 </main>
