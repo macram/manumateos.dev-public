@@ -1,0 +1,53 @@
+---
+title: "Cómo migrar de WordPress a Hugo sin (demasiados) problemas"
+date: 2025-02-06T10:38:49+02:00
+draft: false
+tags: ["Hugo", "WordPress"]
+---
+
+Recientemente hice una migración de un sitio Web creado con WordPress (y con bastante contenido ya publicado) a un <abbr title="Static Site Generator: Generador de Sitios Estáticos">SSG</abbr>. En este caso elegí Hugo, fundamentalmente por ser el sistema que ya utilizo en este sitio Web, y así aprovechaba algunos de los aprendizajes que adquirí cuando monté este sitio. 
+
+Las notas principales ya las publiqué en otros dos artículos, así que en esta nota me centro en las principales diferencias que he tenido creando y publicando el nuevo blog.
+
+## Migración del contenido desde WordPress
+
+Existe un plugin que genera archivos Markdown que luego podemos meter en un sitio Web Hugo sin mucho problema, y respetando las URL originales. El nombre es extremadamente imaginativo: [wordpress-to-hugo-exporter](https://github.com/SchumacherFM/wordpress-to-hugo-exporter). Hace falta instalarlo y poco más. 
+
+Ojo: **no he conseguido exportar los posts de tipos personalizados**. En mi caso estaba utilizando *custom posts* para una sección del sitio Web que tendré que construir desde cero con otro arquetipo de Hugo o algo así. Tampoco es demasiada pérdida en mi opinión y para muchos de vosotros no será excesivo problema. 
+
+En cuanto a las imágenes: como se han exportado a una carpeta `wp-content` y las imágenes ya estaban referenciadas así en los posts (y no quería ir editando todas las rutas nota por nota), lo que he hecho ha sido colocar esta carpeta tal cual está en la ruta `/static` de mi blog Hugo. Eventualmente tengo que trabajar un poco para eliminar miniaturas antiguas y archivos que ya no uso, porque el blog construido ocupa como 300 megabytes, y me parece una barbaridad.
+
+## Publicación en un FTP
+
+No quería dejar de utilizar el plan de hosting que llevo pagando desde 2007 porque estoy en un plan heredado con funcionalidades estupendas y pagando mucho menos de lo que se paga en otros sitios por cosas semejantes, a pesar de ser consciente de que este sitio Web podría alojarlo gratis en muchos sitios. La cosa es que tengo otros sitios Web que no quiero dejar de alojar allí, así que aprovecho los recursos de que dispongo.
+
+Repito la experiencia: el blog se aloja en un repositorio privado en GitHub y el blog se construye y se despliega utilizando GitHub Actions. Tarda unos minutos y tengo que revisar las políticas de caché, pero en principio no tiene mucho problema.
+
+## Mantener la URL del *feed* principal
+
+Una de mis principales preocupaciones es que mis suscriptores actuales por RSS se perdieran el cambio. De hecho al principio fue así. La URL del _feed_ que tenía en WordPress era `/feed` y la que genera Hugo es `/index.xml`.
+
+He probado a apañarlo con un enlace simbólico en `./feed/index.html` apuntando a ./index.xml`, y con eso _a mí me ha funcionado_, pero otros me dicen que tienen problemas. No descarto que fuera algo relacionado con el tema de la caché que comento en el apartado siguiente.
+
+Lo que sí es esperable es que todos los posts aparezcan de nuevo en los lectores de tus suscriptores. No es tampoco un gran drama.
+
+## El momento de la migración
+
+De momento lo que he hecho ha sido renombrar el fichero `index.php`  de la raíz del blog, sacar un *backup* con Softaculous, revisar el fichero `.htaccess` para eliminar muchas de las reglas que estaban puestas en él (muchas veces los *plugins* de caché hacen cosas para priorizar el contenido cacheado y saltarse el acceso a WordPress como tal) y publicar el nuevo sitio Web. Listo. 
+
+## Cosas que he perdido
+
+- **No ofrezco comentarios ni muestro los anteriores**. Podría instalar algo tipo Giscus en el hosting, pero tampoco es una gran pérdida.
+- **No puedo recibir Webmentions**. Tampoco las envío de manera automatizada. No es tampoco una gran pérdida.
+- **El blog deja de actuar como una instancia ActivityPub** y por tanto deja de poderse seguir desde Mastodon. De nuevo, tampoco es una gran pérdida en mi caso.
+
+## Cosas que he ganado
+
+- La posibilidad de llevarme el blog a cualquier sitio, pues son ficheros de texto plano que generan HTML.
+- La posibilidad de alojarlo en literalmente cualquier sitio, incluso a coste cero por mi parte. 
+- En mi caso lo hacen en GitHub Actions, pero podría hacerlo en mi ordenador y ejecutar un `rsync`.
+- Las páginas cargan mucho más rápido que antes y no tengo que instalar software específico para ello.
+
+Entiendo que otros sitios más grandes tengan necesidades más grandes y entiendo que haya gente que use WordPress, pues es un software magnífico. Pero a mí, ahora mismo, me sirve con esto. Espero no arrepentirme en el futuro de haber hecho este cambio. 
+
+- [How I Migrated From WordPress to Hugo](https://blog.muffn.io/posts/how-i-migrated-from-wordpress-to-hugo/)
