@@ -89,4 +89,537 @@ strip =
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.macram.es/personal/un-juguete-para-la-ministeria/"&gt;Un juguete en colaboración con RTVE&lt;/a&gt;, &lt;a href="http://www.macram.es/generadormdt/"&gt;que puedes probar aquí&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;También puedes ver &lt;a href="https://github.com/macram"&gt;mi repositorio público en GitHub&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;También puedes ver &lt;a href="https://github.com/macram"&gt;mi repositorio público en GitHub&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Tags</title><link>/tags/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tags/</guid><description>&lt;div class="tag-cloud"&gt;
+ &lt;h2 class="tag-cloud-title"&gt;&lt;/h2&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/android"
+ style="font-size:1rem"
+ &gt;
+ android
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/app-store"
+ style="font-size:1rem"
+ &gt;
+ app store
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/apple-tv"
+ style="font-size:1.375rem"
+ &gt;
+ apple tv
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/artifactory"
+ style="font-size:1rem"
+ &gt;
+ artifactory
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/avkit"
+ style="font-size:1rem"
+ &gt;
+ avkit
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/bash"
+ style="font-size:1rem"
+ &gt;
+ bash
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/cocoapods"
+ style="font-size:1rem"
+ &gt;
+ cocoapods
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/coregraphics"
+ style="font-size:1rem"
+ &gt;
+ coregraphics
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/coretext"
+ style="font-size:1rem"
+ &gt;
+ coretext
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/dependencias"
+ style="font-size:1rem"
+ &gt;
+ dependencias
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/fish"
+ style="font-size:1rem"
+ &gt;
+ fish
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/foundation"
+ style="font-size:1.375rem"
+ &gt;
+ foundation
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/git"
+ style="font-size:1.5943609377704335rem"
+ &gt;
+ git
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/go"
+ style="font-size:1rem"
+ &gt;
+ go
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/google-maps"
+ style="font-size:1rem"
+ &gt;
+ google maps
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/gradle"
+ style="font-size:1rem"
+ &gt;
+ gradle
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/hugo"
+ style="font-size:2.125rem"
+ &gt;
+ hugo
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/ios"
+ style="font-size:2.4650839733531944rem"
+ &gt;
+ ios
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/iterm2"
+ style="font-size:1rem"
+ &gt;
+ iterm2
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/linux"
+ style="font-size:1.375rem"
+ &gt;
+ linux
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/macos"
+ style="font-size:1.8707230355827609rem"
+ &gt;
+ macos
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/markdown"
+ style="font-size:1.375rem"
+ &gt;
+ markdown
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/mercurial"
+ style="font-size:1.375rem"
+ &gt;
+ mercurial
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/minimal"
+ style="font-size:1rem"
+ &gt;
+ minimal
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/obsidian"
+ style="font-size:1rem"
+ &gt;
+ obsidian
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/ruby"
+ style="font-size:1rem"
+ &gt;
+ ruby
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/ssg"
+ style="font-size:1rem"
+ &gt;
+ ssg
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/ssh"
+ style="font-size:1rem"
+ &gt;
+ ssh
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/swift"
+ style="font-size:1.8707230355827609rem"
+ &gt;
+ swift
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/swift-package-manager"
+ style="font-size:1rem"
+ &gt;
+ swift package manager
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/swift-testing"
+ style="font-size:1rem"
+ &gt;
+ swift testing
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/swiftlint"
+ style="font-size:1rem"
+ &gt;
+ swiftlint
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/terminal"
+ style="font-size:1.375rem"
+ &gt;
+ terminal
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/tvos"
+ style="font-size:1.375rem"
+ &gt;
+ tvos
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/uikit"
+ style="font-size:1.8707230355827609rem"
+ &gt;
+ uikit
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/ux"
+ style="font-size:1rem"
+ &gt;
+ ux
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/web"
+ style="font-size:1.5943609377704335rem"
+ &gt;
+ web
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/wordpress"
+ style="font-size:1rem"
+ &gt;
+ wordpress
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/xcode"
+ style="font-size:1.75rem"
+ &gt;
+ xcode
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;span&gt;
+ &lt;a href="/tags/xctest"
+ style="font-size:1rem"
+ &gt;
+ xctest
+ &lt;/a&gt;
+ &lt;/span&gt;
+ 
+ 
+ &lt;/div&gt;</description></item></channel></rss>
