@@ -1,7 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mercurial on manumateos.dev</title><link>/tags/mercurial/</link><description>Recent content in Mercurial on manumateos.dev</description><generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 07 Dec 2021 18:14:42 +0100</lastBuildDate><atom:link href="/tags/mercurial/index.xml" rel="self" type="application/rss+xml"/><item><title>hg strip</title><link>/posts/hg-strip/</link><pubDate>Tue, 07 Dec 2021 18:14:42 +0100</pubDate><guid>/posts/hg-strip/</guid><description>hg strip es una extensión de Mercurial que permite eliminar changesets y todos sus descendientes.
-Hay que habilitarla añadiendo lo siguiente al fichero .hgrc
-[extensions] strip = A partir de ese momento, hg strip &amp;lt;revisión&amp;gt; sirve para eliminar esa revisión (en número, no en hash) y todas sus descendientes.
-La he utilizado para eliminar una rama recién commiteada y no pusheada. El proceso fue:
-Abrir nueva rama con el nombre correcto.</description></item><item><title>hg shelve</title><link>/posts/hg-shelve/</link><pubDate>Tue, 07 Dec 2021 18:14:17 +0100</pubDate><guid>/posts/hg-shelve/</guid><description>hg unshelve &amp;lt;nombre&amp;gt; sirve para sacar un changeset de un shelve. Si hay cambios pendientes y se genera un conflicto, terminaremos con dos cabezas en la rama actual, lo cual es un embrollo.
-Las dos salidas posibles son:
-Llevar a cabo el merge y continuar el unshelve (hg unshelve --continue) Abortar el unshelve (hg unshelve --abort), hacer lo que sea con los cambios pendientes, y reiniciar el unshelve. SourceTree no tiene un comando gráfico para abortar el unshelve.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mercurial on manumateos.dev</title><link>/tags/mercurial/</link><description>Recent content in Mercurial on manumateos.dev</description><generator>Hugo</generator><language>es</language><lastBuildDate>Tue, 07 Dec 2021 18:14:42 +0100</lastBuildDate><atom:link href="/tags/mercurial/index.xml" rel="self" type="application/rss+xml"/><item><title>hg strip</title><link>/posts/hg-strip/</link><pubDate>Tue, 07 Dec 2021 18:14:42 +0100</pubDate><guid>/posts/hg-strip/</guid><description>&lt;p&gt;&lt;code&gt;hg strip&lt;/code&gt; es una extensión de Mercurial que permite eliminar &lt;em&gt;changesets&lt;/em&gt; &lt;strong&gt;y todos sus descendientes&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Hay que habilitarla añadiendo lo siguiente al fichero &lt;code&gt;.hgrc&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;[extensions]
+strip =
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;A partir de ese momento, &lt;code&gt;hg strip &amp;lt;revisión&amp;gt;&lt;/code&gt; sirve para eliminar esa revisión (en número, no en hash) y todas sus descendientes.&lt;/p&gt;
+&lt;p&gt;La he utilizado para eliminar una rama recién commiteada &lt;strong&gt;y no pusheada&lt;/strong&gt;. El proceso fue:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Abrir nueva rama con el nombre correcto.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Graft&lt;/em&gt; de la rama vieja a la rama nueva, o &lt;em&gt;rebase&lt;/em&gt; si son muchos commit.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Strip&lt;/em&gt; de la revisión a eliminar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Profit!&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>hg shelve</title><link>/posts/hg-shelve/</link><pubDate>Tue, 07 Dec 2021 18:14:17 +0100</pubDate><guid>/posts/hg-shelve/</guid><description>&lt;p&gt;&lt;code&gt;hg unshelve &amp;lt;nombre&amp;gt;&lt;/code&gt; sirve para sacar un changeset de un shelve. Si hay cambios pendientes y se genera un conflicto, terminaremos con dos cabezas en la rama actual, lo cual es un embrollo.&lt;/p&gt;
+&lt;p&gt;Las dos salidas posibles son:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Llevar a cabo el merge y continuar el unshelve (&lt;code&gt;hg unshelve --continue&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Abortar el unshelve (&lt;code&gt;hg unshelve --abort&lt;/code&gt;), hacer &lt;em&gt;lo que sea&lt;/em&gt; con los cambios pendientes, y reiniciar el unshelve.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SourceTree no tiene un comando gráfico para abortar el unshelve. O al menos no soy capaz de encontrarlo en la interfaz.&lt;/p&gt;</description></item></channel></rss>
