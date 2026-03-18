@@ -98,7 +98,11 @@ strip =
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.macram.es/personal/un-juguete-para-la-ministeria/"&gt;Un juguete en colaboración con RTVE&lt;/a&gt;, &lt;a href="http://www.macram.es/generadormdt/"&gt;que puedes probar aquí&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;También puedes ver &lt;a href="https://github.com/macram"&gt;mi repositorio público en GitHub&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Tags</title><link>/tags/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tags/</guid><description>&lt;div class="tag-cloud"&gt;
+&lt;p&gt;También puedes ver &lt;a href="https://github.com/macram"&gt;mi repositorio público en GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="además"&gt;Además…&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://doi.org/10.1016/j.asr.2025.11.069"&gt;&lt;em&gt;&amp;ldquo;SunBurst: a software for automated detection and measurement of solar prominences from solar drawings&amp;rdquo;&lt;/em&gt;&lt;/a&gt; (Advances in Space Research, volumen 77, número 1, 1 de enero de 2026, páginas 1321-1333)&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Tags</title><link>/tags/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tags/</guid><description>&lt;div class="tag-cloud"&gt;
  &lt;h2 class="tag-cloud-title"&gt;&lt;/h2&gt;
  
  
@@ -631,4 +635,6 @@ strip =
  &lt;/span&gt;
  
  
- &lt;/div&gt;</description></item></channel></rss>
+ &lt;/div&gt;</description></item><item><title>Utilidades para desarrolladores</title><link>/commonplace/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/commonplace/</guid><description>&lt;ul&gt;
+&lt;li&gt;&lt;a href="/commonplace/dev-apps"&gt;Herramientas para desarrolladores&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
