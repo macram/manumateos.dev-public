@@ -91,8 +91,8 @@ strip =
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-swift" data-lang="swift"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;viewController.modalPresentationStyle = .fullScreen
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="split-screen"&gt;Split Screen&lt;/h2&gt;
 &lt;p&gt;Hay &lt;strong&gt;muchos&lt;/strong&gt; cambios en el [[Ciclo de vida de los UIViewControllers]] en cuanto metemos en la ecuación la multitarea de iPad, particularmente la funcionalidad de #SplitScreen.&lt;/p&gt;</description></item><item><title>Commonplace</title><link>/commonplace/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/commonplace/</guid><description>&lt;ul&gt;
-&lt;li&gt;&lt;a href="/commonplace/dev-apps"&gt;Herramientas para desarrolladores&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/commonplace/shortcodes"&gt;Shortcodes para Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="dev-apps"&gt;Herramientas para desarrolladores&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="shortcodes"&gt;Shortcodes para Hugo&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title>Sobre mí</title><link>/sobre-mi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/sobre-mi/</guid><description>&lt;p&gt;Mi nombre es Manu Mateos, tengo 33 años y actualmente resido en Extremadura. Me dedico a desarrollar para iOS, ahora mismo trabajando en Sngular.&lt;/p&gt;
 &lt;h2 id="he-hecho"&gt;He hecho…&lt;/h2&gt;
 &lt;ul&gt;
